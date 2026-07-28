@@ -1,90 +1,35 @@
 <!doctype html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#e94f2e">
-  <title>Китай · 15 дней</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Prata&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <main class="app-shell">
-    <header class="topbar">
-      <button class="icon-button menu-button" aria-label="Меню"><span></span><span></span></button>
-      <a class="brand" href="#">CHINA<span>26</span></a>
-      <button class="avatar" aria-label="Профиль">К</button>
-    </header>
-
-    <section class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow">30 июля — 13 августа</span>
-        <h1>Большое<br><em>путешествие</em></h1>
-        <p>Пекин · Баюйцюань · Далянь</p>
-      </div>
-      <div class="stamp" aria-hidden="true">中国<br><small>2026</small></div>
-      <div class="route-line" aria-hidden="true"><i></i><i></i><i></i></div>
-    </section>
-
-    <nav class="tabs" aria-label="Разделы">
-      <button class="tab active" data-view="days">Маршрут</button>
-      <button class="tab" data-view="weather">Погода</button>
-      <button class="tab" data-view="packing">Вещи <b id="packingBadge">0</b></button>
-    </nav>
-
-    <section class="view active" id="daysView">
-      <div class="section-heading">
-        <div><span class="eyebrow">Ваш маршрут</span><h2>День за днём</h2></div>
-        <span class="day-counter"><b id="currentDayNumber">01</b> / 15</span>
-      </div>
-
-      <div class="day-carousel" id="dayCarousel"></div>
-      <div class="carousel-controls">
-        <button class="round-button" id="prevDay" aria-label="Предыдущий день">←</button>
-        <div class="progress-track"><span id="dayProgress"></span></div>
-        <button class="round-button primary" id="nextDay" aria-label="Следующий день">→</button>
-      </div>
-    </section>
-
-    <section class="view" id="weatherView">
-      <div class="section-heading weather-heading">
-        <div><span class="eyebrow">Обновлено недавно</span><h2>Погода в пути</h2></div>
-        <button class="refresh-button" id="refreshWeather">↻</button>
-      </div>
-      <div class="source-note"><span></span> Данные Китайской метеорологической администрации · перевод на русский</div>
-      <article class="weather-main">
-        <div class="weather-location"><span>Сейчас</span><h3>Баюйцюань</h3><p>Ляонин, Китай</p></div>
-        <div class="weather-degree"><span>☁</span><strong>29°</strong><p>Ощущается как 33°</p></div>
-        <div class="weather-stats"><span>Влажность <b>78%</b></span><span>Ветер <b>4 м/с</b></span><span>Осадки <b>40%</b></span></div>
-      </article>
-      <div class="forecast-list" id="forecastList"></div>
-      <div class="alert-card"><span>雨</span><div><b>Возможен кратковременный дождь</b><p>Возьмите дождевик на экскурсию. Прогноз может измениться.</p></div></div>
-    </section>
-
-    <section class="view" id="packingView">
-      <div class="section-heading">
-        <div><span class="eyebrow">Собираем чемодан</span><h2>Список вещей</h2></div>
-        <span class="packing-score"><b id="packingPercent">0%</b><small>готово</small></span>
-      </div>
-      <div class="packing-progress"><span id="packingProgress"></span></div>
-      <div class="packing-filters" id="packingFilters">
-        <button class="active" data-filter="all">Все</button>
-        <button data-filter="base">База</button>
-        <button data-filter="shoot">Съёмка</button>
-        <button data-filter="weather">Погода</button>
-      </div>
-      <div class="packing-list" id="packingList"></div>
-      <form class="add-item" id="addItemForm">
-        <input id="customItem" placeholder="Добавить свою вещь…" autocomplete="off">
-        <select id="customCategory" aria-label="Категория">
-          <option value="base">База</option><option value="shoot">Съёмка</option><option value="weather">Погода</option>
-        </select>
-        <button aria-label="Добавить">+</button>
-      </form>
-    </section>
-  </main>
-  <script src="app.js"></script>
-</body>
-</html>
+<html lang="ru"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f2e5"><title>Китай рядом · 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Manrope:wght@400;500;600;700;800&family=Prata&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css"></head><body>
+<main class="app-shell">
+<header class="topbar"><a class="brand" href="#">Китай <em>рядом</em><small>30.07—13.08 · 2026</small></a><span class="seal">中国</span></header>
+<section class="hero">
+<div class="hero-copy"><span class="eyebrow">Йога-тур · 15 дней</span><h1>Большое путешествие<br><em>по Китаю</em></h1><p>Пекин → Инкоу → Далянь → Пекин</p></div>
+<div class="map" aria-hidden="true">
+<svg viewBox="0 0 580 300"><path class="land" d="M63 81c42-53 116-61 174-20 42 29 75 10 127 22 67 16 137 71 122 126-12 43-62 53-113 47-51-6-83 29-141 12-46-13-65-51-111-66C70 186 27 126 63 81z"/><path class="route" d="M310 87c29 34 45 59 68 92 24 34 67 57 108 67M378 179c-38 18-77 39-102 70"/><g><circle cx="310" cy="87" r="8"/><text x="325" y="81">Пекин</text></g><g><circle cx="378" cy="179" r="8"/><text x="394" y="175">Инкоу</text></g><g><circle cx="486" cy="246" r="8"/><text x="441" y="278">Далянь</text></g></svg></div>
+<span class="sun">日</span><span class="brush b1"></span><span class="brush b2"></span>
+</section>
+<nav class="tabs"><button class="tab active" data-view="days">⌁<span>Маршрут</span></button><button class="tab" data-view="weather">☼<span>Погода</span></button><button class="tab" data-view="packing">✓<span>Вещи</span><b id="packingBadge">0</b></button></nav>
+<section class="view active" id="daysView">
+<div class="section-heading"><div><span class="eyebrow">Листайте карточки</span><h2>День за днём</h2></div><span class="day-counter"><b id="currentDayNumber">01</b> / 15</span></div>
+<div class="day-carousel" id="dayCarousel"></div>
+<div class="carousel-controls"><button class="round-button" id="prevDay">←</button><div class="progress-track"><span id="dayProgress"></span></div><button class="round-button primary" id="nextDay">→</button></div>
+</section>
+<section class="view" id="weatherView">
+<div class="section-heading"><div><span class="eyebrow">По маршруту</span><h2>Погода</h2></div><button class="refresh-button" id="refreshWeather">↻</button></div>
+<div class="source-note"><span></span> Прогноз на русском · обновляется перед поездкой</div>
+<article class="weather-main"><div class="weather-location"><span>Сейчас</span><h3>Инкоу</h3><p>Ляонин, Китай</p></div><div class="weather-degree"><span>🌦</span><strong>29°</strong><p>Ощущается как 33°</p></div><div class="weather-stats"><span>Влажность<b>78%</b></span><span>Ветер<b>4 м/с</b></span><span>Осадки<b>40%</b></span><span>УФ-индекс<b>7 · высокий</b></span></div></article>
+<h3 class="hour-title">Почасовой прогноз</h3><div class="forecast-list" id="forecastList"></div>
+<div class="alert-card"><span>雨</span><div><b>Возможен кратковременный дождь</b><p>Положите дождевик и гермопакет в дневную сумку.</p></div></div>
+</section>
+<section class="view" id="packingView">
+<div class="section-heading"><div><span class="eyebrow">Ничего не забыть</span><h2>Список вещей</h2></div><span class="packing-score"><b id="packingPercent">0%</b><small>готово</small></span></div>
+<div class="packing-progress"><span id="packingProgress"></span></div>
+<div class="packing-filters" id="packingFilters"><button class="active" data-filter="all">Все</button><button data-filter="base">База</button><button data-filter="shoot">Съёмка</button><button data-filter="weather">Погода</button></div>
+<div class="packing-list" id="packingList"></div>
+<form class="add-item" id="addItemForm"><input id="customItem" placeholder="Добавить свою вещь…" autocomplete="off" required><select id="customCategory"><option value="base">База</option><option value="shoot">Съёмка</option><option value="weather">Погода</option></select><button>+</button></form>
+</section></main><script src="app.js"></script></body></html>
