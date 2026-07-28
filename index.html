@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#e94f2e">
+  <title>Китай · 15 дней</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <button class="icon-button menu-button" aria-label="Меню"><span></span><span></span></button>
+      <a class="brand" href="#">CHINA<span>26</span></a>
+      <button class="avatar" aria-label="Профиль">К</button>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">30 июля — 13 августа</span>
+        <h1>Большое<br><em>путешествие</em></h1>
+        <p>Пекин · Баюйцюань · Далянь</p>
+      </div>
+      <div class="stamp" aria-hidden="true">中国<br><small>2026</small></div>
+      <div class="route-line" aria-hidden="true"><i></i><i></i><i></i></div>
+    </section>
+
+    <nav class="tabs" aria-label="Разделы">
+      <button class="tab active" data-view="days">Маршрут</button>
+      <button class="tab" data-view="weather">Погода</button>
+      <button class="tab" data-view="packing">Вещи <b id="packingBadge">0</b></button>
+    </nav>
+
+    <section class="view active" id="daysView">
+      <div class="section-heading">
+        <div><span class="eyebrow">Ваш маршрут</span><h2>День за днём</h2></div>
+        <span class="day-counter"><b id="currentDayNumber">01</b> / 15</span>
+      </div>
+
+      <div class="day-carousel" id="dayCarousel"></div>
+      <div class="carousel-controls">
+        <button class="round-button" id="prevDay" aria-label="Предыдущий день">←</button>
+        <div class="progress-track"><span id="dayProgress"></span></div>
+        <button class="round-button primary" id="nextDay" aria-label="Следующий день">→</button>
+      </div>
+    </section>
+
+    <section class="view" id="weatherView">
+      <div class="section-heading weather-heading">
+        <div><span class="eyebrow">Обновлено недавно</span><h2>Погода в пути</h2></div>
+        <button class="refresh-button" id="refreshWeather">↻</button>
+      </div>
+      <div class="source-note"><span></span> Данные Китайской метеорологической администрации · перевод на русский</div>
+      <article class="weather-main">
+        <div class="weather-location"><span>Сейчас</span><h3>Баюйцюань</h3><p>Ляонин, Китай</p></div>
+        <div class="weather-degree"><span>☁</span><strong>29°</strong><p>Ощущается как 33°</p></div>
+        <div class="weather-stats"><span>Влажность <b>78%</b></span><span>Ветер <b>4 м/с</b></span><span>Осадки <b>40%</b></span></div>
+      </article>
+      <div class="forecast-list" id="forecastList"></div>
+      <div class="alert-card"><span>雨</span><div><b>Возможен кратковременный дождь</b><p>Возьмите дождевик на экскурсию. Прогноз может измениться.</p></div></div>
+    </section>
+
+    <section class="view" id="packingView">
+      <div class="section-heading">
+        <div><span class="eyebrow">Собираем чемодан</span><h2>Список вещей</h2></div>
+        <span class="packing-score"><b id="packingPercent">0%</b><small>готово</small></span>
+      </div>
+      <div class="packing-progress"><span id="packingProgress"></span></div>
+      <div class="packing-filters" id="packingFilters">
+        <button class="active" data-filter="all">Все</button>
+        <button data-filter="base">База</button>
+        <button data-filter="shoot">Съёмка</button>
+        <button data-filter="weather">Погода</button>
+      </div>
+      <div class="packing-list" id="packingList"></div>
+      <form class="add-item" id="addItemForm">
+        <input id="customItem" placeholder="Добавить свою вещь…" autocomplete="off">
+        <select id="customCategory" aria-label="Категория">
+          <option value="base">База</option><option value="shoot">Съёмка</option><option value="weather">Погода</option>
+        </select>
+        <button aria-label="Добавить">+</button>
+      </form>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
