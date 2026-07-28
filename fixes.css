@@ -1,0 +1,2 @@
+html,body,.app-shell{max-width:100%;overflow-x:hidden}.trip-progress{min-width:0}
+@media(max-width:540px){.route-head{grid-template-columns:72px minmax(0,1fr) 42px;gap:4px;padding-left:12px;padding-right:12px}#dayDots{gap:1px}#dayDots i{width:14px;height:14px;font-size:6px}.brand{font-size:27px}}
