@@ -2,7 +2,7 @@ name: Update currency rates
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -18,7 +18,7 @@ jobs:
           python-version: "3.12"
       - name: Fetch CBR and RSHB rates
         run: python scripts/update_rates.py
-      - name: Commit daily row
+      - name: Commit latest check
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
