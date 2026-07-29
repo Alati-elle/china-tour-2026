@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29T23:15:39+03:00",
+  "updated_at": "2026-07-30T00:15:50+03:00",
   "flights": {
     "CZ342": {
       "date": "2026-07-30",
@@ -67,7 +67,5 @@
     }
   },
   "refresh_interval_minutes": 5,
-  "errors": {
-    "CZ341_airport": "CalledProcessError"
-  }
+  "errors": {}
 }
