@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-07-29T02:25:53+03:00",
+  "updated_at": "2026-07-29T10:59:48+03:00",
   "rows": [
     {
       "date": "2026-07-29",
       "cbr_rub_cny": 11.5911,
-      "rshb_rub_cny": 12.73,
+      "rshb_rub_cny": 12.8,
       "cbr_usd_cny": 6.78952,
-      "rshb_usd_cny": 6.002357,
-      "rshb_updated_at": "2026-07-28T23:24:50"
+      "rshb_usd_cny": 6.0,
+      "rshb_updated_at": "2026-07-29T07:53:59"
     }
   ]
 }
