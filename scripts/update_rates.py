@@ -20,14 +20,14 @@ def fetch(url, headers=None):
 
 def cbr_rates():
     root = ET.fromstring(fetch("https://www.cbr.ru/scripts/XML_daily.asp"))
-    result = {}
+    result = {"rate_date": datetime.strptime(root.attrib["Date"], "%d.%m.%Y").date().isoformat()}
     for item in root.findall("Valute"):
         code = item.findtext("CharCode")
         if code in {"USD", "CNY"}:
             nominal = float(item.findtext("Nominal").replace(",", "."))
             value = float(item.findtext("Value").replace(",", "."))
             result[code] = value / nominal
-    if result.keys() != {"USD", "CNY"}:
+    if not {"USD", "CNY"}.issubset(result):
         raise RuntimeError("CBR response has no USD/CNY")
     return result
 
@@ -71,7 +71,7 @@ def main():
     cbr, rshb = cbr_rates(), rshb_rates()
     pbc, boc = pbc_usd_cny(), boc_usd_cny()
     row = {
-        "date": now.date().isoformat(),
+        "date": cbr["rate_date"],
         "cbr_rub_cny": round(cbr["CNY"], 6),
         "rshb_rub_cny": round(rshb["cny_sale"], 6),
         "pbc_cny_per_usd": round(pbc["rate"], 6),
