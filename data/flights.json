@@ -14,7 +14,24 @@
           "status": "По расписанию · 18:50",
           "url": "https://www.svo.aero/ru/timetable/departure/flight/9531100/departing"
         }
-      ]
+      ],
+      "details": {
+        "online_checkin": {
+          "opens_at": "2026-07-29T14:00:00+03:00",
+          "closes_at": "2026-07-30T17:50:00+03:00",
+          "window": "с 29 июля 14:00 до 30 июля 17:50"
+        },
+        "airport_checkin": "Ещё не началась",
+        "terminal": "C",
+        "checkin_counters": "Ещё не опубликованы",
+        "gate": "Ещё не опубликован",
+        "boarding": "Ещё не началась",
+        "scheduled_departure": "30 июля · 18:50",
+        "estimated_departure": "18:50",
+        "actual_departure": "—",
+        "scheduled_arrival": "31 июля · 07:25",
+        "aircraft": "Airbus A330-300"
+      }
     },
     "CZ341": {
       "date": "2026-08-13",
@@ -29,7 +46,24 @@
           "status": "Статус ещё не опубликован",
           "url": "https://wechat.bdia.com.cn/"
         }
-      ]
+      ],
+      "details": {
+        "online_checkin": {
+          "opens_at": "2026-08-12T14:00:00+08:00",
+          "closes_at": "2026-08-13T12:35:00+08:00",
+          "window": "с 12 августа 14:00 до 13 августа 12:35"
+        },
+        "airport_checkin": "Ещё не началась",
+        "terminal": "Ещё не опубликован",
+        "checkin_counters": "Ещё не опубликованы",
+        "gate": "Ещё не опубликован",
+        "boarding": "Ещё не началась",
+        "scheduled_departure": "13 августа · 13:25",
+        "estimated_departure": "Ещё не опубликовано",
+        "actual_departure": "—",
+        "scheduled_arrival": "13 августа · 16:50",
+        "aircraft": "Ещё не опубликован"
+      }
     }
   }
 }
