@@ -2,11 +2,15 @@ name: Update flight status
 
 on:
   schedule:
-    - cron: "*/20 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: update-live-data
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -24,4 +28,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/flights.json
           git diff --cached --quiet || git commit -m "Update flight status"
+          git pull --rebase
           git push
