@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-29T22:00:00+03:00",
+  "updated_at": "2026-07-29T06:54:07+03:00",
   "flights": {
     "CZ342": {
       "date": "2026-07-30",
@@ -38,7 +38,7 @@
       "sources": [
         {
           "name": "China Southern",
-          "status": "Статус ещё не опубликован",
+          "status": "По расписанию · 13:25",
           "url": "https://www.csair.com/en/online/flight_dynamic/"
         },
         {
