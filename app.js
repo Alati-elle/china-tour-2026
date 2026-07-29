@@ -16,7 +16,9 @@ const days=[
 ['13 августа · четверг','Пекин → Москва','Завтрак, завершение тура. 13:25 — вылет в Москву рейсом CZ341. 16:50 — прибытие в Москву.','Паспорт · проверить багаж','✈ В пути']
 ];
 const images=['1508804185872-d7badad00f7d','1507525428034-b723cf961d3e','1547981609-4b6bfe67ca0b','1500530855697-b586d89ba3ee'];
-const carousel=document.querySelector('#dayCarousel'); let day=0;
+const carousel=document.querySelector('#dayCarousel');
+function routeDayForDate(value=new Date()){const local=[value.getFullYear(),String(value.getMonth()+1).padStart(2,'0'),String(value.getDate()).padStart(2,'0')].join('-'),start='2026-07-30',end='2026-08-13',twoWeeksAfter='2026-08-27';if(local<start||local>twoWeeksAfter)return 0;if(local>end)return 14;return Math.round((Date.parse(local+'T12:00:00Z')-Date.parse(start+'T12:00:00Z'))/86400000)}
+let day=routeDayForDate();
 carousel.innerHTML='<div class="day-track">'+days.map((d,i)=>`<article class="day-card"><header class="day-card-head"><div><span class="date-line">${d[0]}</span><h3>${d[1]}</h3><b>День ${String(i+1).padStart(2,'0')}</b></div><div class="day-image" data-bg="url(https://images.unsplash.com/photo-${images[i%images.length]}?auto=format&fit=crop&w=900&q=80)"></div></header><div class="day-columns"><section class="program"><h4>План дня</h4><p>${d[2]}</p></section><aside class="day-aside"><div class="take"><h4>Взять с собой</h4>${d[3].split(' · ').map(x=>'<span><i>✓</i>'+x+'</span>').join('')}</div><div class="tip"><i>💡</i><p><b>Совет</b> Проверьте вещи и прогноз перед выходом.</p></div></aside></div></article>`).join('')+'</div>';
 let track=carousel.firstElementChild,detailed=[];const dots=document.querySelector('#dayDots');dots.innerHTML=days.map((_,i)=>`<i>${i+1}</i>`).join('');
 const weatherPlaces=[
