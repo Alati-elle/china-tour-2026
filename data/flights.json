@@ -1,0 +1,35 @@
+{
+  "updated_at": "2026-07-29T22:00:00+03:00",
+  "flights": {
+    "CZ342": {
+      "date": "2026-07-30",
+      "sources": [
+        {
+          "name": "China Southern",
+          "status": "По расписанию · 18:50",
+          "url": "https://www.csair.com/en/online/flight_dynamic/"
+        },
+        {
+          "name": "Шереметьево",
+          "status": "По расписанию · 18:50",
+          "url": "https://www.svo.aero/ru/timetable/departure/flight/9531100/departing"
+        }
+      ]
+    },
+    "CZ341": {
+      "date": "2026-08-13",
+      "sources": [
+        {
+          "name": "China Southern",
+          "status": "Статус ещё не опубликован",
+          "url": "https://www.csair.com/en/online/flight_dynamic/"
+        },
+        {
+          "name": "Аэропорт Дасин",
+          "status": "Статус ещё не опубликован",
+          "url": "https://wechat.bdia.com.cn/"
+        }
+      ]
+    }
+  }
+}
