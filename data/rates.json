@@ -1,13 +1,19 @@
 {
-  "updated_at": "2026-07-29T10:59:48+03:00",
+  "updated_at": "2026-07-29T13:58:18+03:00",
   "rows": [
     {
       "date": "2026-07-29",
       "cbr_rub_cny": 11.5911,
       "rshb_rub_cny": 12.8,
-      "cbr_usd_cny": 6.78952,
-      "rshb_usd_cny": 6.0,
-      "rshb_updated_at": "2026-07-29T07:53:59"
+      "pbc_cny_per_usd": 6.7899,
+      "boc_cash_cny_per_usd": 6.755,
+      "pbc_rate_date": "2026-07-29",
+      "boc_updated_at": "2026/07/29 18:53:48",
+      "rshb_updated_at": "2026-07-29T10:54:17"
     }
-  ]
+  ],
+  "sources": {
+    "pbc": "https://www.pbc.gov.cn/zhengcehuobisi/125207/125217/125925/2026072909030319189/index.html",
+    "boc": "https://www.bank-of-china.com/english/bocinfo/exr/index.html"
+  }
 }
