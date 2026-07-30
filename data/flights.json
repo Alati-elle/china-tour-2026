@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30T20:02:27+03:00",
+  "updated_at": "2026-07-30T21:41:16+03:00",
   "flights": {
     "CZ342": {
       "date": "2026-07-30",
@@ -32,7 +32,7 @@
         "scheduled_arrival": "31 июля · 07:25",
         "aircraft": "Airbus A330"
       },
-      "last_checked_at": "2026-07-30T17:02:10+00:00"
+      "last_checked_at": "2026-07-30T18:41:16+00:00"
     },
     "CZ341": {
       "date": "2026-08-13",
@@ -65,11 +65,9 @@
         "scheduled_arrival": "13 августа · 16:50",
         "aircraft": "A330-300"
       },
-      "last_checked_at": "2026-07-30T17:02:27+00:00"
+      "last_checked_at": "2026-07-30T18:41:15+00:00"
     }
   },
   "refresh_interval_minutes": 5,
-  "errors": {
-    "CZ341_airport": "CalledProcessError"
-  }
+  "errors": {}
 }
