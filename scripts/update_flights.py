@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import gzip, json, urllib.parse, urllib.request, uuid, subprocess
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -60,6 +60,14 @@ def update_airline(number,flight):
     d['aircraft']=row.get('acfleet') or d.get('aircraft') or 'Ещё не опубликован'
     d['estimated_departure']=fmt_time(row.get('latestDepDt')) or fmt_time(row.get('schDepDt')) or 'Ещё не опубликовано'
     d['actual_departure']=fmt_time(row.get('actDepDt')) or '—'
+    arrived_status=row.get('fltCode') in {'DWN','ONN'}
+    actual_arrival=row.get('actArvDt') or (row.get('latestArvDt') if arrived_status else '')
+    if actual_arrival:
+        arrival_tz=ZoneInfo('Asia/Shanghai' if number=='CZ342' else 'Europe/Moscow')
+        arrived=datetime.fromisoformat(actual_arrival)
+        if arrived.tzinfo is None: arrived=arrived.replace(tzinfo=arrival_tz)
+        flight['actual_arrival_at']=arrived.isoformat(timespec='minutes')
+        d['actual_arrival']=fmt_time(actual_arrival)
 
 def update_svo(number,flight):
     row=svo_flight(number,flight['date'])
@@ -96,14 +104,29 @@ def update_pkx(number,flight):
              aircraft=row.get('planeType') or 'Ещё не опубликован')
     if row.get('delayDesc'): d['delay_reason']=row['delayDesc']
 
+def is_arrived(flight):
+    return bool(flight.get('actual_arrival_at'))
+
 def main():
-    data=json.loads(DATA.read_text('utf-8')); errors={}
+    data=json.loads(DATA.read_text('utf-8')); errors={}; checked=[]
     def process(item):
         number,flight=item
+        if flight.get('frozen_at'): return
+        if is_arrived(flight):
+            flight['frozen_at']=datetime.now(timezone.utc).isoformat(timespec='seconds')
+            flight['refresh_stopped']=True
+            checked.append(number)
+            return
         for label,fn in [('airline',update_airline),('airport',update_svo if number=='CZ342' else update_pkx)]:
             try: fn(number,flight)
             except Exception as exc: errors[number+'_'+label]=type(exc).__name__
+        flight['last_checked_at']=datetime.now(timezone.utc).isoformat(timespec='seconds')
+        if is_arrived(flight):
+            flight['frozen_at']=flight['last_checked_at']
+            flight['refresh_stopped']=True
+        checked.append(number)
     with ThreadPoolExecutor(max_workers=2) as pool: list(pool.map(process,data['flights'].items()))
+    if not checked: return
     data['updated_at']=datetime.now(ZoneInfo('Europe/Moscow')).isoformat(timespec='seconds')
     data['refresh_interval_minutes']=5; data['errors']=errors
     DATA.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n','utf-8')
