@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30T07:11:05+03:00",
+  "updated_at": "2026-07-30T09:43:16+03:00",
   "flights": {
     "CZ342": {
       "date": "2026-07-30",
@@ -23,7 +23,7 @@
         },
         "airport_checkin": "Регистрация в 15:20",
         "terminal": "C",
-        "checkin_counters": "Ещё не опубликованы",
+        "checkin_counters": "374-381",
         "gate": "146",
         "boarding": "Ещё не началась",
         "scheduled_departure": "30 июля · 18:50",
