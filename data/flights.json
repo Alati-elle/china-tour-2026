@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-07-31T01:35:19+03:00",
+  "updated_at": "2026-07-31T02:40:04+03:00",
   "flights": {
     "CZ342": {
       "date": "2026-07-30",
       "sources": [
         {
           "name": "China Southern",
-          "status": "Вылетел · 19:05",
+          "status": "Приземлился · 19:05",
           "url": "https://www.csair.com/en/online/flight_dynamic/"
         },
         {
           "name": "Шереметьево",
-          "status": "В полете~Рейс за 30.07.26",
+          "status": "Прибыл в Пекин 02:21~Рейс за 30.07.26",
           "url": "https://www.svo.aero/ru/timetable/departure/flight/9616834/departing"
         }
       ],
@@ -30,9 +30,13 @@
         "estimated_departure": "18:50",
         "actual_departure": "18:45",
         "scheduled_arrival": "31 июля · 07:25",
-        "aircraft": "Airbus A330"
+        "aircraft": "Airbus A330",
+        "actual_arrival": "07:33"
       },
-      "last_checked_at": "2026-07-30T22:35:19+00:00"
+      "last_checked_at": "2026-07-30T23:40:03+00:00",
+      "actual_arrival_at": "2026-07-31T07:33+08:00",
+      "frozen_at": "2026-07-30T23:40:03+00:00",
+      "refresh_stopped": true
     },
     "CZ341": {
       "date": "2026-08-13",
@@ -65,7 +69,7 @@
         "scheduled_arrival": "13 августа · 16:50",
         "aircraft": "A330-300"
       },
-      "last_checked_at": "2026-07-30T22:35:19+00:00"
+      "last_checked_at": "2026-07-30T23:40:04+00:00"
     }
   },
   "refresh_interval_minutes": 5,
