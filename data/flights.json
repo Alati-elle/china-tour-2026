@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-30T16:10:30+03:00",
+  "updated_at": "2026-07-30T18:24:41+03:00",
   "flights": {
     "CZ342": {
       "date": "2026-07-30",
@@ -11,7 +11,7 @@
         },
         {
           "name": "Шереметьево",
-          "status": "Регистрация идет",
+          "status": "Посадка",
           "url": "https://www.svo.aero/ru/timetable/departure/flight/9616834/departing"
         }
       ],
@@ -21,17 +21,18 @@
           "closes_at": "2026-07-30T17:50:00+03:00",
           "window": "с 29 июля 14:00 до 30 июля 17:50"
         },
-        "airport_checkin": "Регистрация идет",
+        "airport_checkin": "Завершена",
         "terminal": "C",
-        "checkin_counters": "374-381",
+        "checkin_counters": "Ещё не опубликованы",
         "gate": "145",
-        "boarding": "Ещё не началась",
+        "boarding": "Идёт",
         "scheduled_departure": "30 июля · 18:50",
         "estimated_departure": "18:50",
         "actual_departure": "—",
         "scheduled_arrival": "31 июля · 07:25",
         "aircraft": "Airbus A330"
-      }
+      },
+      "last_checked_at": "2026-07-30T15:24:41+00:00"
     },
     "CZ341": {
       "date": "2026-08-13",
@@ -63,7 +64,8 @@
         "actual_departure": "—",
         "scheduled_arrival": "13 августа · 16:50",
         "aircraft": "A330-300"
-      }
+      },
+      "last_checked_at": "2026-07-30T15:24:41+00:00"
     }
   },
   "refresh_interval_minutes": 5,
