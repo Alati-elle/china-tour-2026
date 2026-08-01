@@ -1,0 +1,19 @@
+/* Attractions */
+.attractions-page{background:linear-gradient(#f6faf5,#fbfcf8)}
+.hotel-place-hero{position:relative;overflow:hidden;padding:22px 20px;border:1px solid #c9dccb;border-radius:22px;background:linear-gradient(145deg,#eef8ed,#fffdf7);box-shadow:var(--shadow)}
+.hotel-place-hero:after{content:"";position:absolute;right:-42px;bottom:-55px;width:180px;height:125px;border-radius:50%;background:linear-gradient(145deg,#5c98a8,#77ad72);opacity:.18}
+.hotel-place-hero small,.attraction-card small{display:block;color:var(--red);font-size:8px;font-weight:800;letter-spacing:.12em}
+.hotel-place-hero h3{position:relative;margin:7px 0 10px;color:var(--green);font:25px/1.2 Prata}
+.hotel-place-hero p{position:relative;margin:0;color:#53665d;font-size:11px;line-height:1.6}
+.place-tags{position:relative;display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.place-tags span{padding:7px 10px;border:1px solid #d9e5d9;border-radius:18px;background:#fff;color:#4c6b5e;font-size:9px;font-weight:800}
+.attraction-list{display:grid;gap:12px;margin-top:14px}
+.attraction-card{padding:17px;border:1px solid #d8e5dc;border-radius:18px;background:#fff;box-shadow:0 7px 18px #234b3410}
+.attraction-card.featured{border-color:#bed7c0;background:linear-gradient(145deg,#f2f9ef,#fff)}
+.attraction-card.caution{border-color:#ead1bd;background:#fff8ef}
+.attraction-card h3{margin:5px 0 9px;color:var(--green);font:20px/1.2 Prata}
+.attraction-card p,.attraction-card li{color:#53665d;font-size:10.5px;line-height:1.62}
+.attraction-card p{margin:0}.attraction-card ul{margin:11px 0 0;padding-left:18px}.attraction-card li+li{margin-top:7px}
+.attractions-source{margin:12px 2px 0;color:#74847c;font-size:8px;line-height:1.5}
+.tabs .tab[data-view=attractions]{font-size:21px}.tabs .tab[data-view=attractions] span{font-size:9px}
+@media(max-width:540px){.hotel-place-hero{padding:18px 16px}.hotel-place-hero h3{font-size:21px}.attraction-card{padding:15px}.tabs{padding:0 3px}.tabs .tab{min-width:50px;font-size:21px}.tabs .tab span{font-size:8px}.tabs .tab[data-view=impressions]{min-width:58px}.tabs .tab[data-view=attractions]{font-size:19px}}
