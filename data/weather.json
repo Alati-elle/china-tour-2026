@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02T17:59:46+03:00",
+  "updated_at": "2026-08-02T19:04:07+03:00",
   "source": {
     "name": "中国天气网 · China Weather",
     "url": "https://www.weather.com.cn/",
@@ -10,7 +10,7 @@
       "station_code": "208010100",
       "source_url": "https://www.weather.com.cn/weather1d/208010100.shtml",
       "current": {
-        "time": "2026-08-02T17:59+03:00",
+        "time": "2026-08-02T19:04+03:00",
         "temperature": 21.0,
         "apparent_temperature": null,
         "humidity": 0,
@@ -548,15 +548,15 @@
       "station_code": "101010100",
       "source_url": "https://www.weather.com.cn/weather1d/101010100.shtml",
       "current": {
-        "time": "2026-08-02T22:59+08:00",
+        "time": "2026-08-03T00:04+08:00",
         "temperature": 27.2,
         "apparent_temperature": null,
-        "humidity": 95.0,
-        "wind_kmh": 7.0,
+        "humidity": 94.0,
+        "wind_kmh": 1.0,
         "weather_cn": "阴",
         "weather": "Пасмурно",
         "weather_code": 3,
-        "rain_mm": 1.4
+        "rain_mm": 0.1
       },
       "hourly": [
         {
@@ -1156,15 +1156,15 @@
       "station_code": "101010100",
       "source_url": "https://www.weather.com.cn/weather1d/101010100.shtml",
       "current": {
-        "time": "2026-08-02T22:59+08:00",
+        "time": "2026-08-03T00:04+08:00",
         "temperature": 27.2,
         "apparent_temperature": null,
-        "humidity": 95.0,
-        "wind_kmh": 7.0,
+        "humidity": 94.0,
+        "wind_kmh": 1.0,
         "weather_cn": "阴",
         "weather": "Пасмурно",
         "weather_code": 3,
-        "rain_mm": 1.4
+        "rain_mm": 0.1
       },
       "hourly": [
         {
@@ -1764,11 +1764,11 @@
       "station_code": "101070806",
       "source_url": "https://www.weather.com.cn/weather1d/101070806.shtml",
       "current": {
-        "time": "2026-08-02T22:59+08:00",
-        "temperature": 29.7,
+        "time": "2026-08-03T00:04+08:00",
+        "temperature": 30.0,
         "apparent_temperature": null,
-        "humidity": 84.0,
-        "wind_kmh": 3.0,
+        "humidity": 79.0,
+        "wind_kmh": 7.0,
         "weather_cn": "晴",
         "weather": "Ясно",
         "weather_code": 0,
@@ -2372,11 +2372,11 @@
       "station_code": "101070806",
       "source_url": "https://www.weather.com.cn/weather1d/101070806.shtml",
       "current": {
-        "time": "2026-08-02T22:59+08:00",
-        "temperature": 29.7,
+        "time": "2026-08-03T00:04+08:00",
+        "temperature": 30.0,
         "apparent_temperature": null,
-        "humidity": 84.0,
-        "wind_kmh": 3.0,
+        "humidity": 79.0,
+        "wind_kmh": 7.0,
         "weather_cn": "晴",
         "weather": "Ясно",
         "weather_code": 0,
@@ -2980,11 +2980,11 @@
       "station_code": "101070201",
       "source_url": "https://www.weather.com.cn/weather1d/101070201.shtml",
       "current": {
-        "time": "2026-08-02T22:59+08:00",
-        "temperature": 29.6,
+        "time": "2026-08-03T00:04+08:00",
+        "temperature": 29.5,
         "apparent_temperature": null,
-        "humidity": 82.0,
-        "wind_kmh": 10.0,
+        "humidity": 83.0,
+        "wind_kmh": 9.0,
         "weather_cn": "晴",
         "weather": "Ясно",
         "weather_code": 0,
