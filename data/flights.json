@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-02T14:05:23+03:00",
+  "updated_at": "2026-08-02T15:13:20+03:00",
   "flights": {
     "CZ342": {
       "date": "2026-07-30",
@@ -69,7 +69,7 @@
         "scheduled_arrival": "13 августа · 16:50",
         "aircraft": "A330-300"
       },
-      "last_checked_at": "2026-08-02T11:05:23+00:00"
+      "last_checked_at": "2026-08-02T12:13:20+00:00"
     }
   },
   "refresh_interval_minutes": 5,
