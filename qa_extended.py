@@ -1,11 +1,22 @@
-import json
+import json,os,sys
 from playwright.sync_api import sync_playwright
 
-URL='https://alati-elle.github.io/china-tour-2026/?qa=extended-v20'
+URL=os.environ.get('TEST_URL','https://alati-elle.github.io/china-tour-2026/?qa=extended-v20&day=1')
+PRIVATE_PASSWORD=os.environ.get('PRIVATE_PASSWORD','1111')
 out={'checks':[],'errors':[]}
+def test_url(suffix):
+    sep='&' if '?' in URL else '?'
+    return f'{URL}{sep}qa_run={suffix}'
 def check(name,value,detail=''):
     out['checks'].append({'name':name,'ok':bool(value),'detail':detail})
     if not value: out['errors'].append(f'{name}: {detail}')
+
+def unlock_private(page, tab):
+    page.locator(f'.tab[data-view={tab}]').click()
+    if page.locator('#privateLock').is_visible():
+      page.fill('#privatePassword',PRIVATE_PASSWORD)
+      page.click('.private-lock-submit')
+      page.wait_for_selector('#privateLock',state='hidden')
 
 with sync_playwright() as p:
   browser=p.chromium.launch(headless=True,executable_path='/home/vpnadmin/.cache/ms-playwright/chromium_headless_shell-1228/chrome-headless-shell-linux64/chrome-headless-shell',args=['--no-sandbox'])
@@ -14,10 +25,13 @@ with sync_playwright() as p:
     console=[]
     page.on('console',lambda m:console.append(m.text) if m.type=='error' else None)
     page.on('pageerror',lambda e:console.append(str(e)))
-    page.goto(URL+f'-{width}',wait_until='networkidle',timeout=60000)
+    page.goto(test_url(width),wait_until='networkidle',timeout=60000)
     page.wait_for_selector('.detailed-card')
-    for view in ('days','weather','rates','packing'):
-      page.locator(f'.tab[data-view={view}]').click()
+    for view in ('days','weather','rates','packing','impressions'):
+      if view in ('packing','impressions'):
+        unlock_private(page,view)
+      else:
+        page.locator(f'.tab[data-view={view}]').click()
       visible=page.locator(f'#{view}View').is_visible()
       check(f'{width} {view} visible',visible)
       overflow=page.evaluate('document.documentElement.scrollWidth<=document.documentElement.clientWidth+1')
@@ -31,11 +45,11 @@ with sync_playwright() as p:
     page.close()
 
   page=browser.new_page(viewport={'width':390,'height':844})
-  page.goto(URL+'-functional',wait_until='networkidle',timeout=60000)
+  page.goto(test_url('functional'),wait_until='networkidle',timeout=60000)
   page.evaluate('localStorage.clear()')
   page.reload(wait_until='networkidle')
   page.wait_for_selector('.detailed-card')
-  page.locator('.tab[data-view=packing]').click()
+  unlock_private(page,'packing')
   for category in ('base','shoot','weather','clothes','hygiene'):
     page.locator(f'#packingFilters button[data-filter={category}]').click()
     name='QA-'+category
@@ -48,8 +62,19 @@ with sync_playwright() as p:
   check('dot move leaves old category',page.locator('.packing-item',has_text='QA-shoot').count()==0)
   page.locator('#packingFilters button[data-filter=clothes]').click()
   check('dot move enters category',page.locator('.packing-item',has_text='QA-shoot').count()==1)
-  page.reload(wait_until='networkidle');page.locator('.tab[data-view=packing]').click();page.locator('#packingFilters button[data-filter=clothes]').click()
+  page.reload(wait_until='networkidle');unlock_private(page,'packing');page.locator('#packingFilters button[data-filter=clothes]').click()
   check('category persists reload',page.locator('.packing-item',has_text='QA-shoot').count()==1)
+  page.locator('.tab[data-view=impressions]').click()
+  note=page.locator('.impression-card').first
+  note.locator('.impression-title').fill('QA diary')
+  note.locator('textarea').fill('QA impression text')
+  note.locator('.mood-current').click();note.locator('[data-mood=joy]').click();note.locator('.save-impression').click()
+  page.reload(wait_until='networkidle');unlock_private(page,'impressions')
+  check('impression text persists',page.locator('.impression-card').first.locator('textarea').input_value()=='QA impression text')
+  check('impression title persists',page.locator('.impression-card').first.locator('.impression-title').input_value()=='QA diary')
+  check('impression export visible',page.locator('#exportImpressions').is_visible())
+  page.locator('#exportImpressions').click()
+  check('impression export status','Экспортировано записей: 1' in page.locator('#impressionsExportStatus').inner_text(),page.locator('#impressionsExportStatus').inner_text())
   page.locator('.tab[data-view=days]').click()
   page.locator('.detailed-card').first.locator('.edit-card').click()
   title=page.locator('.detailed-card').first.locator('[data-edit-field=title]')
@@ -61,3 +86,4 @@ with sync_playwright() as p:
   check('card reset',page.locator('.detailed-card').first.locator('[data-edit-field=title]').inner_text()==old)
   browser.close()
 print(json.dumps(out,ensure_ascii=False))
+sys.exit(1 if out["errors"] else 0)

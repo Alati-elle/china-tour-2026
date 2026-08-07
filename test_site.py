@@ -1,11 +1,19 @@
-import json,os
+import json,os,sys
 from playwright.sync_api import sync_playwright
 
-URL=os.environ.get("TEST_URL","https://alati-elle.github.io/china-tour-2026/?test=e2e-v12")
+URL=os.environ.get("TEST_URL","https://alati-elle.github.io/china-tour-2026/?test=e2e-v12&day=1")
+PRIVATE_PASSWORD=os.environ.get("PRIVATE_PASSWORD","1111")
 results={"errors":[],"checks":[]}
 def check(name, ok, detail=""):
     results["checks"].append({"name":name,"ok":bool(ok),"detail":detail})
     if not ok: results["errors"].append(name+": "+detail)
+
+def unlock_private(page, tab="packing"):
+    page.click(f".tab[data-view={tab}]")
+    if page.locator("#privateLock").is_visible():
+        page.fill("#privatePassword",PRIVATE_PASSWORD)
+        page.click(".private-lock-submit")
+        page.wait_for_selector("#privateLock",state="hidden")
 
 with sync_playwright() as p:
     browser=p.chromium.launch(headless=True,executable_path="/home/vpnadmin/.cache/ms-playwright/chromium_headless_shell-1228/chrome-headless-shell-linux64/chrome-headless-shell",args=["--no-sandbox"])
@@ -26,7 +34,7 @@ with sync_playwright() as p:
         if i<14: page.click("#nextDay")
     page.click(".tab[data-view=weather]")
     check("weather page visible",page.locator("#weatherView").evaluate("e=>getComputedStyle(e).display")!="none")
-    page.click(".tab[data-view=packing]")
+    unlock_private(page,"packing")
     check("packing page visible",page.locator("#packingView").evaluate("e=>getComputedStyle(e).display")!="none")
     initial=page.locator(".packing-item").count()
     check("packing populated",initial>=17,str(initial))
@@ -37,17 +45,32 @@ with sync_playwright() as p:
     page.locator(".packing-item",has_text="Тестовая вещь").locator(".edit-item").click()
     check("packing edit",page.locator(".packing-item",has_text="Отредактированная вещь").count()==1)
     page.reload(wait_until="networkidle")
-    page.click(".tab[data-view=packing]")
+    unlock_private(page,"packing")
     check("packing persists",page.locator(".packing-item",has_text="Отредактированная вещь").count()==1)
     page.locator(".packing-item",has_text="Отредактированная вещь").locator(".delete-item").click()
     check("packing delete",page.locator(".packing-item",has_text="Отредактированная вещь").count()==0)
+    page.click(".tab[data-view=impressions]")
+    check("impressions page visible",page.locator("#impressionsView").evaluate("e=>getComputedStyle(e).display")!="none")
+    first_note=page.locator(".impression-card").first
+    first_note.locator("textarea").fill("Тестовая заметка")
+    first_note.locator(".mood-current").click()
+    first_note.locator("[data-mood=happy]").click()
+    first_note.locator(".save-impression").click()
+    page.reload(wait_until="networkidle")
+    unlock_private(page,"impressions")
+    check("impression persists",page.locator(".impression-card").first.locator("textarea").input_value()=="Тестовая заметка")
+    check("impression export visible",page.locator("#exportImpressions").is_visible())
+    page.click("#exportImpressions")
+    check("impression export status","Экспортировано записей: 1" in page.locator("#impressionsExportStatus").inner_text(),page.locator("#impressionsExportStatus").inner_text())
     page.click(".tab[data-view=days]")
     check("weather location shown",page.locator("#weatherLocation").inner_text().strip()=="Москва",page.locator("#weatherLocation").inner_text())
     page.click("#nextDay")
     check("weather location changes",page.locator("#weatherLocation").inner_text().strip()=="Баюйцюань / Инкоу",page.locator("#weatherLocation").inner_text())
     page.click("#refreshDayWeather")
     page.wait_for_function("!document.querySelector('#refreshDayWeather').classList.contains('loading')",timeout=30000)
-    check("weather refresh status","Обновлено" in page.locator("#weatherUpdated").inner_text() or "недоступен" in page.locator("#weatherUpdated").inner_text(),page.locator("#weatherUpdated").inner_text())
+    weather_status=page.locator("#weatherUpdated").inner_text()
+    check("weather refresh status","Обновлено" in weather_status or "недоступен" in weather_status or "не опубликовал" in weather_status,weather_status)
     page.screenshot(path="/tmp/china-site-mobile.png",full_page=True)
     browser.close()
 print(json.dumps(results,ensure_ascii=False,indent=2))
+sys.exit(1 if results["errors"] else 0)
