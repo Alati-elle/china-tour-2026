@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T23:37:05+03:00",
+  "updated_at": "2026-08-11T00:37:12+03:00",
   "rows": [
     {
       "date": "2026-07-29",
@@ -78,8 +78,8 @@
       "pbc_cny_per_usd": 6.7884,
       "boc_cash_cny_per_usd": 6.7372,
       "pbc_rate_date": "2026-08-10",
-      "boc_updated_at": "2026/08/11 02:53:53",
-      "rshb_updated_at": "2026-08-10T20:35:31"
+      "boc_updated_at": "2026/08/11 05:30:00",
+      "rshb_updated_at": "2026-08-10T21:33:48"
     }
   ],
   "sources": {
