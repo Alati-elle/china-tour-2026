@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12T18:28:38+03:00",
+  "updated_at": "2026-08-12T19:27:23+03:00",
   "rows": [
     {
       "date": "2026-07-29",
@@ -96,10 +96,10 @@
       "cbr_rub_cny": 12.278,
       "rshb_rub_cny": 13.47,
       "pbc_cny_per_usd": 6.7882,
-      "boc_cash_cny_per_usd": 6.7313,
+      "boc_cash_cny_per_usd": 6.7322,
       "pbc_rate_date": "2026-08-12",
-      "boc_updated_at": "2026/08/12 23:25:09",
-      "rshb_updated_at": "2026-08-12T15:27:28"
+      "boc_updated_at": "2026/08/13 00:25:10",
+      "rshb_updated_at": "2026-08-12T16:23:44"
     }
   ],
   "sources": {
