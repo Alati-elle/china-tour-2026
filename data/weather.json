@@ -1,607 +1,29 @@
 {
-  "updated_at": "2026-08-12T04:55:06+03:00",
+  "updated_at": "2026-08-12T06:58:59+03:00",
   "source": {
     "name": "中国天气网 · China Weather",
     "url": "https://www.weather.com.cn/",
     "operator": "Китайское метеорологическое управление"
   },
   "locations": {
-    "Москва": {
-      "station_code": "208010100",
-      "source_url": "https://www.weather.com.cn/weather1d/208010100.shtml",
-      "current": {
-        "time": "2026-08-12T04:55+03:00",
-        "temperature": 15.0,
-        "apparent_temperature": null,
-        "humidity": 0,
-        "wind_kmh": 0,
-        "weather_cn": "小雨",
-        "weather": "Небольшой дождь",
-        "weather_code": 61,
-        "rain_mm": 0
-      },
-      "hourly": [
-        {
-          "time": "2026-08-12T09:00",
-          "temperature": 15.0,
-          "weather_cn": "小雨",
-          "weather": "Небольшой дождь",
-          "weather_code": 61,
-          "wind_direction": "西风",
-          "wind_level": "3-4级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-12T12:00",
-          "temperature": 16.0,
-          "weather_cn": "小雨",
-          "weather": "Небольшой дождь",
-          "weather_code": 61,
-          "wind_direction": "西北风",
-          "wind_level": "3-4级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-12T15:00",
-          "temperature": 16.0,
-          "weather_cn": "小雨",
-          "weather": "Небольшой дождь",
-          "weather_code": 61,
-          "wind_direction": "西北风",
-          "wind_level": "3-4级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-12T18:00",
-          "temperature": 16.0,
-          "weather_cn": "小雨",
-          "weather": "Небольшой дождь",
-          "weather_code": 61,
-          "wind_direction": "西风",
-          "wind_level": "3-4级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-12T21:00",
-          "temperature": 14.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-13T00:00",
-          "temperature": 12.0,
-          "weather_cn": "阴",
-          "weather": "Пасмурно",
-          "weather_code": 3,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-13T03:00",
-          "temperature": 11.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-13T06:00",
-          "temperature": 11.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-13T09:00",
-          "temperature": 13.0,
-          "weather_cn": "小雨",
-          "weather": "Небольшой дождь",
-          "weather_code": 61,
-          "wind_direction": "西北风",
-          "wind_level": "3-4级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-13T12:00",
-          "temperature": 13.0,
-          "weather_cn": "小雨",
-          "weather": "Небольшой дождь",
-          "weather_code": 61,
-          "wind_direction": "西北风",
-          "wind_level": "3-4级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-13T15:00",
-          "temperature": 13.0,
-          "weather_cn": "小雨",
-          "weather": "Небольшой дождь",
-          "weather_code": 61,
-          "wind_direction": "西北风",
-          "wind_level": "3-4级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-13T18:00",
-          "temperature": 14.0,
-          "weather_cn": "小雨",
-          "weather": "Небольшой дождь",
-          "weather_code": 61,
-          "wind_direction": "西北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-13T21:00",
-          "temperature": 12.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-14T00:00",
-          "temperature": 11.0,
-          "weather_cn": "阴",
-          "weather": "Пасмурно",
-          "weather_code": 3,
-          "wind_direction": "西北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-14T03:00",
-          "temperature": 9.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-14T06:00",
-          "temperature": 9.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-14T09:00",
-          "temperature": 13.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西北风",
-          "wind_level": "3-4级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-14T12:00",
-          "temperature": 15.0,
-          "weather_cn": "阴",
-          "weather": "Пасмурно",
-          "weather_code": 3,
-          "wind_direction": "西北风",
-          "wind_level": "3-4级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-14T15:00",
-          "temperature": 15.0,
-          "weather_cn": "阴",
-          "weather": "Пасмурно",
-          "weather_code": 3,
-          "wind_direction": "西北风",
-          "wind_level": "3-4级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-14T18:00",
-          "temperature": 15.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西北风",
-          "wind_level": "3-4级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-14T21:00",
-          "temperature": 12.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-15T00:00",
-          "temperature": 10.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-15T03:00",
-          "temperature": 9.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-15T06:00",
-          "temperature": 9.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-15T09:00",
-          "temperature": 13.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-15T12:00",
-          "temperature": 17.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西北风",
-          "wind_level": "3-4级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-15T15:00",
-          "temperature": 19.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-15T18:00",
-          "temperature": 18.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-15T21:00",
-          "temperature": 14.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-16T00:00",
-          "temperature": 13.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-16T03:00",
-          "temperature": 12.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-16T06:00",
-          "temperature": 12.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-16T09:00",
-          "temperature": 16.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-16T12:00",
-          "temperature": 20.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-16T15:00",
-          "temperature": 22.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-16T18:00",
-          "temperature": 22.0,
-          "weather_cn": "小雨",
-          "weather": "Небольшой дождь",
-          "weather_code": 61,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-16T21:00",
-          "temperature": 18.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "东南风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-17T00:00",
-          "temperature": 16.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "南风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-17T03:00",
-          "temperature": 15.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西南风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-17T06:00",
-          "temperature": 15.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西南风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-17T09:00",
-          "temperature": 19.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-17T12:00",
-          "temperature": 22.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西南风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-17T15:00",
-          "temperature": 25.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-17T18:00",
-          "temperature": 23.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-17T21:00",
-          "temperature": 20.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-18T00:00",
-          "temperature": 18.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-18T03:00",
-          "temperature": 17.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西南风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-18T06:00",
-          "temperature": 16.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西南风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-18T09:00",
-          "temperature": 19.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西南风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-18T12:00",
-          "temperature": 24.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-18T15:00",
-          "temperature": 24.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-18T18:00",
-          "temperature": 21.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-18T21:00",
-          "temperature": 19.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西南风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-19T00:00",
-          "temperature": 16.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-19T03:00",
-          "temperature": 15.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西南风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
-          "time": "2026-08-19T06:00",
-          "temperature": 15.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
-          "wind_direction": "西南风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        }
-      ],
-      "display_name": "Москва"
-    },
     "Пекин": {
       "station_code": "101010100",
       "source_url": "https://www.weather.com.cn/weather1d/101010100.shtml",
       "current": {
-        "time": "2026-08-12T09:55+08:00",
-        "temperature": 24.9,
+        "time": "2026-08-12T11:58+08:00",
+        "temperature": 26.3,
         "apparent_temperature": null,
-        "humidity": 97.0,
-        "wind_kmh": 2.0,
+        "humidity": 89.0,
+        "wind_kmh": 7.0,
         "weather_cn": "阴",
         "weather": "Пасмурно",
         "weather_code": 3,
-        "rain_mm": 0.2
+        "rain_mm": 0.0
       },
       "hourly": [
         {
           "time": "2026-08-12T11:00",
-          "temperature": 24.0,
+          "temperature": 23.0,
           "weather_cn": "大雨",
           "weather": "Сильный дождь",
           "weather_code": 65,
@@ -611,7 +33,7 @@
         },
         {
           "time": "2026-08-12T14:00",
-          "temperature": 25.0,
+          "temperature": 24.0,
           "weather_cn": "中雨",
           "weather": "Дождь",
           "weather_code": 63,
@@ -651,7 +73,7 @@
         },
         {
           "time": "2026-08-13T02:00",
-          "temperature": 23.0,
+          "temperature": 22.0,
           "weather_cn": "小雨",
           "weather": "Небольшой дождь",
           "weather_code": 61,
@@ -842,9 +264,9 @@
         {
           "time": "2026-08-15T11:00",
           "temperature": 29.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "东风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -852,9 +274,9 @@
         {
           "time": "2026-08-15T14:00",
           "temperature": 30.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "东南风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -862,9 +284,9 @@
         {
           "time": "2026-08-15T17:00",
           "temperature": 28.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "东南风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -872,9 +294,9 @@
         {
           "time": "2026-08-15T20:00",
           "temperature": 27.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "东风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -882,9 +304,9 @@
         {
           "time": "2026-08-15T23:00",
           "temperature": 23.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "东风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -892,9 +314,9 @@
         {
           "time": "2026-08-16T02:00",
           "temperature": 21.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "西北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -902,9 +324,9 @@
         {
           "time": "2026-08-16T05:00",
           "temperature": 22.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -912,9 +334,9 @@
         {
           "time": "2026-08-16T08:00",
           "temperature": 25.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -922,9 +344,9 @@
         {
           "time": "2026-08-16T11:00",
           "temperature": 28.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
+          "weather_cn": "雷阵雨",
+          "weather": "Гроза с дождём",
+          "weather_code": 95,
           "wind_direction": "北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -932,9 +354,9 @@
         {
           "time": "2026-08-16T14:00",
           "temperature": 30.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
+          "weather_cn": "雷阵雨",
+          "weather": "Гроза с дождём",
+          "weather_code": 95,
           "wind_direction": "东南风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -942,9 +364,9 @@
         {
           "time": "2026-08-16T17:00",
           "temperature": 24.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
+          "weather_cn": "雷阵雨",
+          "weather": "Гроза с дождём",
+          "weather_code": 95,
           "wind_direction": "北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -952,6 +374,16 @@
         {
           "time": "2026-08-16T20:00",
           "temperature": 23.0,
+          "weather_cn": "雷阵雨",
+          "weather": "Гроза с дождём",
+          "weather_code": 95,
+          "wind_direction": "北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-16T23:00",
+          "temperature": 22.0,
           "weather_cn": "多云",
           "weather": "Переменная облачность",
           "weather_code": 2,
@@ -960,21 +392,11 @@
           "precipitation_probability": null
         },
         {
-          "time": "2026-08-16T23:00",
-          "temperature": 22.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
-          "wind_direction": "北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
           "time": "2026-08-17T02:00",
           "temperature": 20.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "西北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -982,9 +404,9 @@
         {
           "time": "2026-08-17T05:00",
           "temperature": 20.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -992,9 +414,9 @@
         {
           "time": "2026-08-17T08:00",
           "temperature": 23.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1082,9 +504,9 @@
         {
           "time": "2026-08-18T11:00",
           "temperature": 29.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
           "wind_direction": "东北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1092,9 +514,9 @@
         {
           "time": "2026-08-18T14:00",
           "temperature": 30.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
           "wind_direction": "东南风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1102,9 +524,9 @@
         {
           "time": "2026-08-18T17:00",
           "temperature": 30.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
           "wind_direction": "南风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1112,9 +534,9 @@
         {
           "time": "2026-08-18T20:00",
           "temperature": 25.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
           "wind_direction": "南风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1142,9 +564,9 @@
         {
           "time": "2026-08-19T05:00",
           "temperature": 21.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "南风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1166,20 +588,20 @@
       "station_code": "101010100",
       "source_url": "https://www.weather.com.cn/weather1d/101010100.shtml",
       "current": {
-        "time": "2026-08-12T09:55+08:00",
-        "temperature": 24.9,
+        "time": "2026-08-12T11:58+08:00",
+        "temperature": 26.3,
         "apparent_temperature": null,
-        "humidity": 97.0,
-        "wind_kmh": 2.0,
+        "humidity": 89.0,
+        "wind_kmh": 7.0,
         "weather_cn": "阴",
         "weather": "Пасмурно",
         "weather_code": 3,
-        "rain_mm": 0.2
+        "rain_mm": 0.0
       },
       "hourly": [
         {
           "time": "2026-08-12T11:00",
-          "temperature": 24.0,
+          "temperature": 23.0,
           "weather_cn": "大雨",
           "weather": "Сильный дождь",
           "weather_code": 65,
@@ -1189,7 +611,7 @@
         },
         {
           "time": "2026-08-12T14:00",
-          "temperature": 25.0,
+          "temperature": 24.0,
           "weather_cn": "中雨",
           "weather": "Дождь",
           "weather_code": 63,
@@ -1229,7 +651,7 @@
         },
         {
           "time": "2026-08-13T02:00",
-          "temperature": 23.0,
+          "temperature": 22.0,
           "weather_cn": "小雨",
           "weather": "Небольшой дождь",
           "weather_code": 61,
@@ -1420,9 +842,9 @@
         {
           "time": "2026-08-15T11:00",
           "temperature": 29.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "东风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1430,9 +852,9 @@
         {
           "time": "2026-08-15T14:00",
           "temperature": 30.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "东南风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1440,9 +862,9 @@
         {
           "time": "2026-08-15T17:00",
           "temperature": 28.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "东南风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1450,9 +872,9 @@
         {
           "time": "2026-08-15T20:00",
           "temperature": 27.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "东风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1460,9 +882,9 @@
         {
           "time": "2026-08-15T23:00",
           "temperature": 23.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "东风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1470,9 +892,9 @@
         {
           "time": "2026-08-16T02:00",
           "temperature": 21.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "西北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1480,9 +902,9 @@
         {
           "time": "2026-08-16T05:00",
           "temperature": 22.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1490,9 +912,9 @@
         {
           "time": "2026-08-16T08:00",
           "temperature": 25.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1500,9 +922,9 @@
         {
           "time": "2026-08-16T11:00",
           "temperature": 28.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
+          "weather_cn": "雷阵雨",
+          "weather": "Гроза с дождём",
+          "weather_code": 95,
           "wind_direction": "北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1510,9 +932,9 @@
         {
           "time": "2026-08-16T14:00",
           "temperature": 30.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
+          "weather_cn": "雷阵雨",
+          "weather": "Гроза с дождём",
+          "weather_code": 95,
           "wind_direction": "东南风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1520,9 +942,9 @@
         {
           "time": "2026-08-16T17:00",
           "temperature": 24.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
+          "weather_cn": "雷阵雨",
+          "weather": "Гроза с дождём",
+          "weather_code": 95,
           "wind_direction": "北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1530,6 +952,16 @@
         {
           "time": "2026-08-16T20:00",
           "temperature": 23.0,
+          "weather_cn": "雷阵雨",
+          "weather": "Гроза с дождём",
+          "weather_code": 95,
+          "wind_direction": "北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-16T23:00",
+          "temperature": 22.0,
           "weather_cn": "多云",
           "weather": "Переменная облачность",
           "weather_code": 2,
@@ -1538,21 +970,11 @@
           "precipitation_probability": null
         },
         {
-          "time": "2026-08-16T23:00",
-          "temperature": 22.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
-          "wind_direction": "北风",
-          "wind_level": "<3级",
-          "precipitation_probability": null
-        },
-        {
           "time": "2026-08-17T02:00",
           "temperature": 20.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "西北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1560,9 +982,9 @@
         {
           "time": "2026-08-17T05:00",
           "temperature": 20.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1570,9 +992,9 @@
         {
           "time": "2026-08-17T08:00",
           "temperature": 23.0,
-          "weather_cn": "雷阵雨",
-          "weather": "Гроза с дождём",
-          "weather_code": 95,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1660,9 +1082,9 @@
         {
           "time": "2026-08-18T11:00",
           "temperature": 29.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
           "wind_direction": "东北风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1670,9 +1092,9 @@
         {
           "time": "2026-08-18T14:00",
           "temperature": 30.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
           "wind_direction": "东南风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1680,9 +1102,9 @@
         {
           "time": "2026-08-18T17:00",
           "temperature": 30.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
           "wind_direction": "南风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1690,9 +1112,9 @@
         {
           "time": "2026-08-18T20:00",
           "temperature": 25.0,
-          "weather_cn": "多云",
-          "weather": "Переменная облачность",
-          "weather_code": 2,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
           "wind_direction": "南风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1720,9 +1142,9 @@
         {
           "time": "2026-08-19T05:00",
           "temperature": 21.0,
-          "weather_cn": "晴",
-          "weather": "Ясно",
-          "weather_code": 0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
           "wind_direction": "南风",
           "wind_level": "<3级",
           "precipitation_probability": null
@@ -1744,11 +1166,11 @@
       "station_code": "101070806",
       "source_url": "https://www.weather.com.cn/weather1d/101070806.shtml",
       "current": {
-        "time": "2026-08-12T09:55+08:00",
-        "temperature": 31.4,
+        "time": "2026-08-12T11:58+08:00",
+        "temperature": 31.1,
         "apparent_temperature": null,
-        "humidity": 52.0,
-        "wind_kmh": 5.0,
+        "humidity": 57.0,
+        "wind_kmh": 15.0,
         "weather_cn": "多云",
         "weather": "Переменная облачность",
         "weather_code": 2,
@@ -2322,11 +1744,11 @@
       "station_code": "101070806",
       "source_url": "https://www.weather.com.cn/weather1d/101070806.shtml",
       "current": {
-        "time": "2026-08-12T09:55+08:00",
-        "temperature": 31.4,
+        "time": "2026-08-12T11:58+08:00",
+        "temperature": 31.1,
         "apparent_temperature": null,
-        "humidity": 52.0,
-        "wind_kmh": 5.0,
+        "humidity": 57.0,
+        "wind_kmh": 15.0,
         "weather_cn": "多云",
         "weather": "Переменная облачность",
         "weather_code": 2,
@@ -2900,11 +2322,11 @@
       "station_code": "101070201",
       "source_url": "https://www.weather.com.cn/weather1d/101070201.shtml",
       "current": {
-        "time": "2026-08-12T09:55+08:00",
-        "temperature": 27.7,
+        "time": "2026-08-12T11:58+08:00",
+        "temperature": 28.6,
         "apparent_temperature": null,
-        "humidity": 76.0,
-        "wind_kmh": 14.0,
+        "humidity": 69.0,
+        "wind_kmh": 11.0,
         "weather_cn": "多云",
         "weather": "Переменная облачность",
         "weather_code": 2,
@@ -2958,7 +2380,7 @@
           "weather": "Переменная облачность",
           "weather_code": 2,
           "wind_direction": "东风",
-          "wind_level": "4-5级",
+          "wind_level": "3-4级",
           "precipitation_probability": null
         },
         {
@@ -2968,7 +2390,7 @@
           "weather": "Переменная облачность",
           "weather_code": 2,
           "wind_direction": "东北风",
-          "wind_level": "4-5级",
+          "wind_level": "3-4级",
           "precipitation_probability": null
         },
         {
@@ -2978,7 +2400,7 @@
           "weather": "Переменная облачность",
           "weather_code": 2,
           "wind_direction": "东北风",
-          "wind_level": "4-5级",
+          "wind_level": "3-4级",
           "precipitation_probability": null
         },
         {
@@ -2988,7 +2410,7 @@
           "weather": "Переменная облачность",
           "weather_code": 2,
           "wind_direction": "东北风",
-          "wind_level": "4-5级",
+          "wind_level": "3-4级",
           "precipitation_probability": null
         },
         {
@@ -3118,7 +2540,7 @@
           "weather": "Переменная облачность",
           "weather_code": 2,
           "wind_direction": "东风",
-          "wind_level": "4-5级",
+          "wind_level": "3-4级",
           "precipitation_probability": null
         },
         {
@@ -3128,7 +2550,7 @@
           "weather": "Переменная облачность",
           "weather_code": 2,
           "wind_direction": "东风",
-          "wind_level": "4-5级",
+          "wind_level": "3-4级",
           "precipitation_probability": null
         },
         {
@@ -3138,7 +2560,7 @@
           "weather": "Переменная облачность",
           "weather_code": 2,
           "wind_direction": "东北风",
-          "wind_level": "4-5级",
+          "wind_level": "3-4级",
           "precipitation_probability": null
         },
         {
@@ -3148,7 +2570,7 @@
           "weather": "Переменная облачность",
           "weather_code": 2,
           "wind_direction": "东北风",
-          "wind_level": "4-5级",
+          "wind_level": "3-4级",
           "precipitation_probability": null
         },
         {
@@ -3473,6 +2895,584 @@
         }
       ],
       "display_name": "Далянь"
+    },
+    "Москва": {
+      "station_code": "208010100",
+      "source_url": "https://www.weather.com.cn/weather1d/208010100.shtml",
+      "current": {
+        "time": "2026-08-12T06:58+03:00",
+        "temperature": 15.0,
+        "apparent_temperature": null,
+        "humidity": 0,
+        "wind_kmh": 0,
+        "weather_cn": "小雨",
+        "weather": "Небольшой дождь",
+        "weather_code": 61,
+        "rain_mm": 0
+      },
+      "hourly": [
+        {
+          "time": "2026-08-12T09:00",
+          "temperature": 15.0,
+          "weather_cn": "小雨",
+          "weather": "Небольшой дождь",
+          "weather_code": 61,
+          "wind_direction": "西风",
+          "wind_level": "3-4级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T12:00",
+          "temperature": 16.0,
+          "weather_cn": "小雨",
+          "weather": "Небольшой дождь",
+          "weather_code": 61,
+          "wind_direction": "西北风",
+          "wind_level": "3-4级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T15:00",
+          "temperature": 16.0,
+          "weather_cn": "小雨",
+          "weather": "Небольшой дождь",
+          "weather_code": 61,
+          "wind_direction": "西北风",
+          "wind_level": "3-4级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T18:00",
+          "temperature": 16.0,
+          "weather_cn": "小雨",
+          "weather": "Небольшой дождь",
+          "weather_code": 61,
+          "wind_direction": "西风",
+          "wind_level": "3-4级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T21:00",
+          "temperature": 14.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T00:00",
+          "temperature": 12.0,
+          "weather_cn": "阴",
+          "weather": "Пасмурно",
+          "weather_code": 3,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T03:00",
+          "temperature": 11.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T06:00",
+          "temperature": 11.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T09:00",
+          "temperature": 13.0,
+          "weather_cn": "小雨",
+          "weather": "Небольшой дождь",
+          "weather_code": 61,
+          "wind_direction": "西北风",
+          "wind_level": "3-4级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T12:00",
+          "temperature": 13.0,
+          "weather_cn": "小雨",
+          "weather": "Небольшой дождь",
+          "weather_code": 61,
+          "wind_direction": "西北风",
+          "wind_level": "3-4级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T15:00",
+          "temperature": 13.0,
+          "weather_cn": "小雨",
+          "weather": "Небольшой дождь",
+          "weather_code": 61,
+          "wind_direction": "西北风",
+          "wind_level": "3-4级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T18:00",
+          "temperature": 14.0,
+          "weather_cn": "小雨",
+          "weather": "Небольшой дождь",
+          "weather_code": 61,
+          "wind_direction": "西北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T21:00",
+          "temperature": 12.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-14T00:00",
+          "temperature": 11.0,
+          "weather_cn": "阴",
+          "weather": "Пасмурно",
+          "weather_code": 3,
+          "wind_direction": "西北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-14T03:00",
+          "temperature": 9.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-14T06:00",
+          "temperature": 9.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-14T09:00",
+          "temperature": 13.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西北风",
+          "wind_level": "3-4级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-14T12:00",
+          "temperature": 15.0,
+          "weather_cn": "阴",
+          "weather": "Пасмурно",
+          "weather_code": 3,
+          "wind_direction": "西北风",
+          "wind_level": "3-4级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-14T15:00",
+          "temperature": 15.0,
+          "weather_cn": "阴",
+          "weather": "Пасмурно",
+          "weather_code": 3,
+          "wind_direction": "西北风",
+          "wind_level": "3-4级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-14T18:00",
+          "temperature": 15.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西北风",
+          "wind_level": "3-4级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-14T21:00",
+          "temperature": 12.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-15T00:00",
+          "temperature": 10.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-15T03:00",
+          "temperature": 9.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-15T06:00",
+          "temperature": 9.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-15T09:00",
+          "temperature": 13.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-15T12:00",
+          "temperature": 17.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西北风",
+          "wind_level": "3-4级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-15T15:00",
+          "temperature": 19.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-15T18:00",
+          "temperature": 18.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-15T21:00",
+          "temperature": 14.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-16T00:00",
+          "temperature": 13.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-16T03:00",
+          "temperature": 12.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-16T06:00",
+          "temperature": 12.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-16T09:00",
+          "temperature": 16.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-16T12:00",
+          "temperature": 20.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-16T15:00",
+          "temperature": 22.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西北风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-16T18:00",
+          "temperature": 22.0,
+          "weather_cn": "小雨",
+          "weather": "Небольшой дождь",
+          "weather_code": 61,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-16T21:00",
+          "temperature": 18.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "东南风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-17T00:00",
+          "temperature": 16.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "南风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-17T03:00",
+          "temperature": 15.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西南风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-17T06:00",
+          "temperature": 15.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西南风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-17T09:00",
+          "temperature": 19.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-17T12:00",
+          "temperature": 22.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西南风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-17T15:00",
+          "temperature": 25.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-17T18:00",
+          "temperature": 23.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-17T21:00",
+          "temperature": 20.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-18T00:00",
+          "temperature": 18.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-18T03:00",
+          "temperature": 17.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西南风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-18T06:00",
+          "temperature": 16.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西南风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-18T09:00",
+          "temperature": 19.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西南风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-18T12:00",
+          "temperature": 24.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-18T15:00",
+          "temperature": 24.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-18T18:00",
+          "temperature": 21.0,
+          "weather_cn": "多云",
+          "weather": "Переменная облачность",
+          "weather_code": 2,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-18T21:00",
+          "temperature": 19.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西南风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-19T00:00",
+          "temperature": 16.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-19T03:00",
+          "temperature": 15.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西南风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-19T06:00",
+          "temperature": 15.0,
+          "weather_cn": "晴",
+          "weather": "Ясно",
+          "weather_code": 0,
+          "wind_direction": "西南风",
+          "wind_level": "<3级",
+          "precipitation_probability": null
+        }
+      ],
+      "display_name": "Москва"
     }
   },
   "errors": {}
