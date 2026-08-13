@@ -1,0 +1,32 @@
+name: Update visit geography
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */3 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update-visits:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Update Plausible visit geography
+        env:
+          PLAUSIBLE_API_KEY: ${{ secrets.PLAUSIBLE_API_KEY }}
+          PLAUSIBLE_SITE_ID: ${{ secrets.PLAUSIBLE_SITE_ID }}
+          PLAUSIBLE_PATH_PREFIX: /china-tour-2026
+          PLAUSIBLE_PERIOD: 30d
+        run: python3 scripts/update_visits.py
+      - name: Commit data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/visits.json
+          git diff --cached --quiet || git commit -m "Update visit geography"
+          git push

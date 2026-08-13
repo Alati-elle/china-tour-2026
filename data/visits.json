@@ -1,0 +1,15 @@
+{
+  "updated_at": "2026-08-13T02:11:40.797127+00:00",
+  "source": "plausible",
+  "status": "not_configured",
+  "period": "30d",
+  "site_id": "",
+  "path_prefix": "/china-tour-2026",
+  "totals": {
+    "visitors": 0,
+    "visits": 0,
+    "pageviews": 0
+  },
+  "locations": [],
+  "message": "Добавьте PLAUSIBLE_API_KEY и PLAUSIBLE_SITE_ID в GitHub Secrets."
+}
