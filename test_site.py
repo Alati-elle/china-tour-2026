@@ -2,7 +2,7 @@ import json,os,sys
 from playwright.sync_api import sync_playwright
 
 URL=os.environ.get("TEST_URL","https://alati-elle.github.io/china-tour-2026/?test=e2e-v12&day=1")
-PRIVATE_PASSWORD=os.environ.get("PRIVATE_PASSWORD","1111")
+PRIVATE_PASSWORD=os.environ.get("PRIVATE_PASSWORD","1111111")
 results={"errors":[],"checks":[]}
 def check(name, ok, detail=""):
     results["checks"].append({"name":name,"ok":bool(ok),"detail":detail})

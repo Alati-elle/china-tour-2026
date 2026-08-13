@@ -2,7 +2,7 @@ import json,os,sys
 from playwright.sync_api import sync_playwright
 
 URL=os.environ.get('TEST_URL','https://alati-elle.github.io/china-tour-2026/?qa=extended-v20&day=1')
-PRIVATE_PASSWORD=os.environ.get('PRIVATE_PASSWORD','1111')
+PRIVATE_PASSWORD=os.environ.get('PRIVATE_PASSWORD','1111111')
 out={'checks':[],'errors':[]}
 def test_url(suffix):
     sep='&' if '?' in URL else '?'
