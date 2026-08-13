@@ -50,6 +50,8 @@ with sync_playwright() as p:
   page.reload(wait_until='networkidle')
   page.wait_for_selector('.detailed-card')
   unlock_private(page,'packing')
+  check('visit stats visible',page.locator('#visitStats').is_visible())
+  check('visit stats populated',page.locator('#visitStatsRows article').count()>=1,str(page.locator('#visitStatsRows article').count()))
   for category in ('base','shoot','weather','clothes','hygiene'):
     page.locator(f'#packingFilters button[data-filter={category}]').click()
     name='QA-'+category
