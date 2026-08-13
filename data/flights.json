@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T14:35:32+03:00",
+  "updated_at": "2026-08-13T15:30:59+03:00",
   "flights": {
     "CZ342": {
       "date": "2026-07-30",
@@ -43,7 +43,7 @@
       "sources": [
         {
           "name": "China Southern",
-          "status": "Вылетел · 13:30",
+          "status": "По расписанию · 13:25",
           "url": "https://www.csair.com/en/online/flight_dynamic/"
         },
         {
@@ -69,7 +69,7 @@
         "scheduled_arrival": "13 августа · 16:50",
         "aircraft": "A333"
       },
-      "last_checked_at": "2026-08-13T11:35:32+00:00"
+      "last_checked_at": "2026-08-13T12:30:59+00:00"
     }
   },
   "refresh_interval_minutes": 5,
