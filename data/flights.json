@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-13T06:54:52+03:00",
+  "updated_at": "2026-08-13T08:42:29+03:00",
   "flights": {
     "CZ342": {
       "date": "2026-07-30",
@@ -43,12 +43,12 @@
       "sources": [
         {
           "name": "China Southern",
-          "status": "По расписанию · 13:25",
+          "status": "Вылетел · 13:30",
           "url": "https://www.csair.com/en/online/flight_dynamic/"
         },
         {
           "name": "Аэропорт Дасин",
-          "status": "预计",
+          "status": "起飞",
           "url": "https://wechat.bdia.com.cn/"
         }
       ],
@@ -62,14 +62,14 @@
         "terminal": "T1",
         "checkin_counters": "C19-C36",
         "gate": "E90",
-        "boarding": "Ещё не началась",
+        "boarding": "Завершена",
         "scheduled_departure": "13 августа · 13:25",
-        "estimated_departure": "13:25",
-        "actual_departure": "—",
+        "estimated_departure": "13:12",
+        "actual_departure": "13:28",
         "scheduled_arrival": "13 августа · 16:50",
         "aircraft": "A333"
       },
-      "last_checked_at": "2026-08-13T03:54:52+00:00"
+      "last_checked_at": "2026-08-13T05:42:29+00:00"
     }
   },
   "refresh_interval_minutes": 5,
