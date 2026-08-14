@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -28,5 +31,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/analytics.json data/visits.json
-          git diff --cached --quiet || git commit -m "Update visit geography"
-          git push
+          if git diff --cached --quiet; then
+            echo "No visit geography changes to publish"
+            exit 0
+          fi
+          git commit -m "Update visit geography"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            git rebase --abort || true
+            sleep $((attempt * 5))
+          done
+          exit 1
