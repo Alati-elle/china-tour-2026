@@ -16,17 +16,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Update Plausible visit geography
+      - name: Update GA4 visit geography
         env:
-          PLAUSIBLE_API_KEY: ${{ secrets.PLAUSIBLE_API_KEY }}
-          PLAUSIBLE_SITE_ID: ${{ secrets.PLAUSIBLE_SITE_ID }}
-          PLAUSIBLE_PATH_PREFIX: /china-tour-2026
-          PLAUSIBLE_PERIOD: 30d
+          GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
+          GA_SERVICE_ACCOUNT_JSON: ${{ secrets.GA_SERVICE_ACCOUNT_JSON }}
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+          GA_PERIOD: 30daysAgo
         run: python3 scripts/update_visits.py
       - name: Commit data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/visits.json
+          git add data/analytics.json data/visits.json
           git diff --cached --quiet || git commit -m "Update visit geography"
           git push

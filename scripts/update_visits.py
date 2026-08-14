@@ -1,104 +1,162 @@
+import base64
 import json
 import os
+import subprocess
 import sys
+import tempfile
+import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
 OUT = Path("data/visits.json")
-API_BASE = os.environ.get("PLAUSIBLE_API_BASE", "https://plausible.io").rstrip("/")
-API_KEY = os.environ.get("PLAUSIBLE_API_KEY", "").strip()
-SITE_ID = os.environ.get("PLAUSIBLE_SITE_ID", "").strip()
-PERIOD = os.environ.get("PLAUSIBLE_PERIOD", "30d").strip() or "30d"
-PATH_PREFIX = os.environ.get("PLAUSIBLE_PATH_PREFIX", "/china-tour-2026").strip()
+ANALYTICS = Path("data/analytics.json")
+PROPERTY_ID = os.environ.get("GA_PROPERTY_ID", "").strip()
+SERVICE_ACCOUNT_JSON = os.environ.get("GA_SERVICE_ACCOUNT_JSON", "").strip()
+MEASUREMENT_ID = os.environ.get("GA_MEASUREMENT_ID", "").strip()
+PERIOD = os.environ.get("GA_PERIOD", "30daysAgo").strip() or "30daysAgo"
+API_SCOPE = "https://www.googleapis.com/auth/analytics.readonly"
+TOKEN_URL = "https://oauth2.googleapis.com/token"
 
 
-def write_payload(payload):
-    OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
+def b64url(value):
+    return base64.urlsafe_b64encode(value).rstrip(b"=").decode("ascii")
+
+
+def write_json(path, payload):
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n")
 
 
 def empty(status, message):
     return {
         "updated_at": datetime.now(timezone.utc).isoformat(),
-        "source": "plausible",
+        "source": "google_analytics",
         "status": status,
         "period": PERIOD,
-        "site_id": SITE_ID,
-        "path_prefix": PATH_PREFIX,
+        "property_id": PROPERTY_ID,
         "totals": {"visitors": 0, "visits": 0, "pageviews": 0},
         "locations": [],
         "message": message,
     }
 
 
-def plausible_query(metrics, dimensions=None):
-    filters = [["is_not", "visit:country_name", [""]]]
-    if PATH_PREFIX:
-        filters.append(["contains", "event:page", [PATH_PREFIX]])
-    query = {
-        "site_id": SITE_ID,
-        "metrics": metrics,
-        "date_range": PERIOD,
-        "filters": filters,
+def update_public_config():
+    current = {}
+    if ANALYTICS.exists():
+        try:
+            current = json.loads(ANALYTICS.read_text())
+        except Exception:
+            current = {}
+    if MEASUREMENT_ID:
+        current["measurement_id"] = MEASUREMENT_ID
+    current.setdefault("measurement_id", "")
+    write_json(ANALYTICS, current)
+
+
+def sign_rs256(data, private_key):
+    with tempfile.NamedTemporaryFile("w", delete=False) as key_file:
+        key_file.write(private_key)
+        key_path = key_file.name
+    try:
+        proc = subprocess.run(
+            ["openssl", "dgst", "-sha256", "-sign", key_path],
+            input=data,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            check=True,
+        )
+        return proc.stdout
+    finally:
+        Path(key_path).unlink(missing_ok=True)
+
+
+def access_token():
+    account = json.loads(SERVICE_ACCOUNT_JSON)
+    now = int(time.time())
+    header = {"alg": "RS256", "typ": "JWT"}
+    claims = {
+        "iss": account["client_email"],
+        "scope": API_SCOPE,
+        "aud": TOKEN_URL,
+        "iat": now,
+        "exp": now + 3600,
+    }
+    unsigned = b64url(json.dumps(header, separators=(",", ":")).encode()) + "." + b64url(json.dumps(claims, separators=(",", ":")).encode())
+    signature = b64url(sign_rs256(unsigned.encode("ascii"), account["private_key"]))
+    body = urllib.parse.urlencode({
+        "grant_type": "urn:ietf:params:oauth:grant-type:jwt-bearer",
+        "assertion": unsigned + "." + signature,
+    }).encode()
+    req = urllib.request.Request(TOKEN_URL, data=body, method="POST")
+    with urllib.request.urlopen(req, timeout=30) as response:
+        return json.loads(response.read().decode())["access_token"]
+
+
+def run_report(token, dimensions=None, limit=100):
+    payload = {
+        "dateRanges": [{"startDate": PERIOD, "endDate": "today"}],
+        "metrics": [{"name": "activeUsers"}, {"name": "sessions"}, {"name": "screenPageViews"}],
+        "limit": str(limit),
     }
     if dimensions:
-        query["dimensions"] = dimensions
-        query["order_by"] = [["visitors", "desc"]]
-        query["pagination"] = {"limit": 50, "offset": 0}
+        payload["dimensions"] = [{"name": name} for name in dimensions]
+        payload["orderBys"] = [{"metric": {"metricName": "activeUsers"}, "desc": True}]
     req = urllib.request.Request(
-        API_BASE + "/api/v2/query",
-        data=json.dumps(query).encode("utf-8"),
-        headers={
-            "Authorization": "Bearer " + API_KEY,
-            "Content-Type": "application/json",
-        },
+        f"https://analyticsdata.googleapis.com/v1beta/properties/{PROPERTY_ID}:runReport",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={"Authorization": "Bearer " + token, "Content-Type": "application/json"},
         method="POST",
     )
     with urllib.request.urlopen(req, timeout=30) as response:
         return json.loads(response.read().decode("utf-8"))
 
 
+def metric_values(row):
+    values = [int(x.get("value", 0) or 0) for x in row.get("metricValues", [])]
+    return (values + [0, 0, 0])[:3]
+
+
 def main():
-    if not API_KEY or not SITE_ID:
-        write_payload(empty("not_configured", "Добавьте PLAUSIBLE_API_KEY и PLAUSIBLE_SITE_ID в GitHub Secrets."))
+    update_public_config()
+    if not PROPERTY_ID or not SERVICE_ACCOUNT_JSON:
+        write_json(OUT, empty("not_configured", "Добавьте GA_PROPERTY_ID, GA_SERVICE_ACCOUNT_JSON и GA_MEASUREMENT_ID в GitHub Secrets."))
         return 0
-    metrics = ["visitors", "visits", "pageviews"]
     try:
-        totals_response = plausible_query(metrics)
-        locations_response = plausible_query(metrics, ["visit:country_name", "visit:city_name"])
+        token = access_token()
+        totals_response = run_report(token)
+        locations_response = run_report(token, ["country", "region", "city"], 50)
     except urllib.error.HTTPError as exc:
         detail = exc.read().decode("utf-8", errors="replace")[:500]
-        write_payload(empty("error", f"Plausible API вернул {exc.code}: {detail}"))
+        write_json(OUT, empty("error", f"Google Analytics API вернул {exc.code}: {detail}"))
         return 1
     except Exception as exc:
-        write_payload(empty("error", f"Не удалось обновить Plausible: {exc}"))
+        write_json(OUT, empty("error", f"Не удалось обновить Google Analytics: {exc}"))
         return 1
 
-    total_metrics = (totals_response.get("results") or [{}])[0].get("metrics", [0, 0, 0])
+    total_row = (totals_response.get("rows") or [{}])[0]
+    visitors, visits, pageviews = metric_values(total_row)
     locations = []
-    for row in locations_response.get("results", []):
-        country, city = (row.get("dimensions") or ["", ""])[:2]
-        visitors, visits, pageviews = (row.get("metrics") or [0, 0, 0])[:3]
+    for row in locations_response.get("rows", []):
+        dims = [x.get("value", "") for x in row.get("dimensionValues", [])]
+        country, region, city = (dims + ["", "", ""])[:3]
+        row_visitors, row_visits, row_pageviews = metric_values(row)
         locations.append({
             "country": country or "Не определено",
+            "region": region or "",
             "city": city or "Не определено",
-            "visitors": int(visitors or 0),
-            "visits": int(visits or 0),
-            "pageviews": int(pageviews or 0),
+            "visitors": row_visitors,
+            "visits": row_visits,
+            "pageviews": row_pageviews,
         })
-    write_payload({
+    write_json(OUT, {
         "updated_at": datetime.now(timezone.utc).isoformat(),
-        "source": "plausible",
+        "source": "google_analytics",
         "status": "ok",
         "period": PERIOD,
-        "site_id": SITE_ID,
-        "path_prefix": PATH_PREFIX,
-        "totals": {
-            "visitors": int((total_metrics + [0, 0, 0])[0] or 0),
-            "visits": int((total_metrics + [0, 0, 0])[1] or 0),
-            "pageviews": int((total_metrics + [0, 0, 0])[2] or 0),
-        },
+        "property_id": PROPERTY_ID,
+        "totals": {"visitors": visitors, "visits": visits, "pageviews": pageviews},
         "locations": locations,
         "message": "",
     })
