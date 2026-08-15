@@ -57,6 +57,7 @@ with sync_playwright() as p:
   unlock_private(page,'packing')
   check('visit geography removed',page.locator('#visitStats').count()==0)
   check('packing file buttons visible',page.locator('#exportPacking').is_visible() and page.locator('#importPackingButton').is_visible())
+  check('packing file buttons compact',page.locator('#exportPacking').bounding_box()['width']<=44 and page.locator('#importPackingButton').bounding_box()['width']<=44)
   for category in ('base','shoot','weather','clothes','hygiene'):
     page.locator(f'#packingFilters button[data-filter={category}]').click()
     name='QA-'+category
@@ -81,6 +82,8 @@ with sync_playwright() as p:
   check('impression title persists',page.locator('.impression-card').first.locator('.impression-title').input_value()=='QA diary')
   check('impression export visible',page.locator('#exportImpressions').is_visible())
   check('impression import visible',page.locator('#importImpressionsButton').is_visible())
+  check('impression file buttons compact',page.locator('#exportImpressions').bounding_box()['width']<=44 and page.locator('#importImpressionsButton').bounding_box()['width']<=44)
+  check('future notes visible',page.locator('#futureNotes').is_visible())
   page.locator('#exportImpressions').click()
   check('impression export status','Экспортировано записей: 1' in page.locator('#impressionsExportStatus').inner_text(),page.locator('#impressionsExportStatus').inner_text())
   page.locator('.tab[data-view=days]').click()
