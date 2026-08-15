@@ -1,0 +1,4459 @@
+{
+  "frozen": true,
+  "updated_at": "2026-08-15T12:22:34+00:00",
+  "source": {
+    "name": "Open-Meteo Historical Weather API",
+    "url": "https://open-meteo.com/",
+    "note": "Архив погоды за даты маршрута. Файл статический и не обновляется автоматически."
+  },
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-07-30",
+      "location": "Москва",
+      "summary": "Слабая морось: утром +17°, днем +20°, вечером +19°. За день +15°…+23°, влажность около 74%, осадки 12,2 мм, ветер до 4,9 м/с."
+    },
+    {
+      "day": 2,
+      "date": "2026-07-31",
+      "location": "Баюйцюань / Инкоу",
+      "summary": "Ясно: утром +31°, днем +34°, вечером +30°. За день +28°…+34°, влажность около 66%, осадки 0,1 мм, ветер до 7,5 м/с."
+    },
+    {
+      "day": 3,
+      "date": "2026-08-01",
+      "location": "Баюйцюань / Инкоу",
+      "summary": "Ясно: утром +32°, днем +34°, вечером +31°. За день +29°…+34°, влажность около 65%, осадки 0,6 мм, ветер до 7,1 м/с."
+    },
+    {
+      "day": 4,
+      "date": "2026-08-02",
+      "location": "Туаньшань / Бэйхай",
+      "summary": "Ясно: утром +32°, днем +34°, вечером +31°. За день +28°…+35°, влажность около 61%, осадки 0,7 мм, ветер до 4,3 м/с."
+    },
+    {
+      "day": 5,
+      "date": "2026-08-03",
+      "location": "Баюйцюань / Инкоу",
+      "summary": "Ясно: утром +34°, днем +37°, вечером +31°. За день +29°…+37°, влажность около 56%, осадки 0,6 мм, ветер до 4,8 м/с."
+    },
+    {
+      "day": 6,
+      "date": "2026-08-04",
+      "location": "Баюйцюань / Инкоу",
+      "summary": "Ясно: утром +33°, днем +37°, вечером +32°. За день +28°…+37°, влажность около 59%, осадки 0,3 мм, ветер до 4,3 м/с."
+    },
+    {
+      "day": 7,
+      "date": "2026-08-05",
+      "location": "Далянь",
+      "summary": "Преимущественно ясно: утром +30°, днем +31°, вечером +28°. За день +26°…+32°, влажность около 73%, без заметных осадков, ветер до 3,6 м/с."
+    },
+    {
+      "day": 8,
+      "date": "2026-08-06",
+      "location": "Баюйцюань / Инкоу",
+      "summary": "Ясно: утром +34°, днем +37°, вечером +33°. За день +27°…+37°, влажность около 51%, без заметных осадков, ветер до 3,2 м/с."
+    },
+    {
+      "day": 9,
+      "date": "2026-08-07",
+      "location": "Баюйцюань / Инкоу",
+      "summary": "Ясно: утром +32°, днем +32°, вечером +26°. За день +25°…+33°, влажность около 60%, без заметных осадков, ветер до 8,9 м/с."
+    },
+    {
+      "day": 10,
+      "date": "2026-08-08",
+      "location": "Баюйцюань / Инкоу",
+      "summary": "Ясно: утром +22°, днем +28°, вечером +25°. За день +21°…+28°, влажность около 45%, без заметных осадков, ветер до 8,8 м/с."
+    },
+    {
+      "day": 11,
+      "date": "2026-08-09",
+      "location": "Пекин",
+      "summary": "Переменная облачность: утром +25°, днем +31°, вечером +28°. За день +23°…+32°, влажность около 51%, без заметных осадков, ветер до 3,6 м/с."
+    },
+    {
+      "day": 12,
+      "date": "2026-08-10",
+      "location": "Пекин",
+      "summary": "Ясно: утром +26°, днем +33°, вечером +30°. За день +23°…+33°, влажность около 48%, без заметных осадков, ветер до 2,9 м/с."
+    },
+    {
+      "day": 13,
+      "date": "2026-08-11",
+      "location": "Великая Китайская стена / Пекин",
+      "summary": "Слабая морось: утром +24°, днем +28°, вечером +23°. За день +21°…+28°, влажность около 82%, осадки 5,3 мм, ветер до 4,1 м/с."
+    },
+    {
+      "day": 14,
+      "date": "2026-08-12",
+      "location": "Пекин",
+      "summary": "Слабая морось: утром +25°, днем +24°, вечером +23°. За день +23°…+26°, влажность около 89%, осадки 28,6 мм, ветер до 2,0 м/с."
+    },
+    {
+      "day": 15,
+      "date": "2026-08-13",
+      "location": "Пекин",
+      "summary": "Ясно: утром +25°, днем +29°, вечером +26°. За день +22°…+29°, влажность около 68%, осадки 10,9 мм, ветер до 2,9 м/с."
+    }
+  ],
+  "locations": {
+    "Москва": {
+      "display_name": "Москва",
+      "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=55.7558&longitude=37.6173&start_date=2026-07-30&end_date=2026-07-30&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Cweather_code%2Cwind_speed_10m&timezone=Europe%2FMoscow",
+      "hourly": [
+        {
+          "time": "2026-07-30T00:00",
+          "temperature": 16.2,
+          "humidity": 97,
+          "rain_mm": 4.6,
+          "wind_kmh": 9.3,
+          "weather_code": 63,
+          "weather": "Дождь",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T01:00",
+          "temperature": 16.1,
+          "humidity": 98,
+          "rain_mm": 1.1,
+          "wind_kmh": 8.1,
+          "weather_code": 55,
+          "weather": "Сильная морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T02:00",
+          "temperature": 15.9,
+          "humidity": 98,
+          "rain_mm": 0.1,
+          "wind_kmh": 7.0,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T03:00",
+          "temperature": 15.8,
+          "humidity": 97,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.1,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T04:00",
+          "temperature": 15.2,
+          "humidity": 98,
+          "rain_mm": 0.0,
+          "wind_kmh": 10.6,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T05:00",
+          "temperature": 15.0,
+          "humidity": 97,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.7,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T06:00",
+          "temperature": 15.6,
+          "humidity": 96,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.4,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T07:00",
+          "temperature": 16.3,
+          "humidity": 92,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.6,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T08:00",
+          "temperature": 16.9,
+          "humidity": 88,
+          "rain_mm": 0.4,
+          "wind_kmh": 7.9,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T09:00",
+          "temperature": 17.7,
+          "humidity": 83,
+          "rain_mm": 0.2,
+          "wind_kmh": 9.8,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T10:00",
+          "temperature": 18.7,
+          "humidity": 79,
+          "rain_mm": 0.1,
+          "wind_kmh": 6.4,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T11:00",
+          "temperature": 20.1,
+          "humidity": 70,
+          "rain_mm": 0.2,
+          "wind_kmh": 10.8,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T12:00",
+          "temperature": 20.4,
+          "humidity": 74,
+          "rain_mm": 0.3,
+          "wind_kmh": 11.5,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T13:00",
+          "temperature": 20.4,
+          "humidity": 74,
+          "rain_mm": 0.6,
+          "wind_kmh": 11.8,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T14:00",
+          "temperature": 19.7,
+          "humidity": 82,
+          "rain_mm": 1.9,
+          "wind_kmh": 17.8,
+          "weather_code": 61,
+          "weather": "Небольшой дождь",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T15:00",
+          "temperature": 22.3,
+          "humidity": 61,
+          "rain_mm": 1.0,
+          "wind_kmh": 15.9,
+          "weather_code": 55,
+          "weather": "Сильная морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T16:00",
+          "temperature": 22.4,
+          "humidity": 62,
+          "rain_mm": 0.1,
+          "wind_kmh": 16.6,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T17:00",
+          "temperature": 22.9,
+          "humidity": 58,
+          "rain_mm": 0.1,
+          "wind_kmh": 17.7,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T18:00",
+          "temperature": 22.4,
+          "humidity": 65,
+          "rain_mm": 0.1,
+          "wind_kmh": 16.6,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T19:00",
+          "temperature": 20.6,
+          "humidity": 75,
+          "rain_mm": 0.4,
+          "wind_kmh": 16.0,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T20:00",
+          "temperature": 19.4,
+          "humidity": 85,
+          "rain_mm": 0.7,
+          "wind_kmh": 16.2,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T21:00",
+          "temperature": 18.1,
+          "humidity": 92,
+          "rain_mm": 0.2,
+          "wind_kmh": 16.3,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T22:00",
+          "temperature": 17.9,
+          "humidity": 92,
+          "rain_mm": 0.1,
+          "wind_kmh": 15.7,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-30T23:00",
+          "temperature": 17.8,
+          "humidity": 92,
+          "rain_mm": 0.0,
+          "wind_kmh": 15.3,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        }
+      ]
+    },
+    "Баюйцюань / Инкоу": {
+      "display_name": "Баюйцюань / Инкоу",
+      "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=40.27&longitude=122.12&start_date=2026-07-31&end_date=2026-08-08&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Cweather_code%2Cwind_speed_10m&timezone=Asia%2FShanghai",
+      "hourly": [
+        {
+          "time": "2026-07-31T00:00",
+          "temperature": 28.3,
+          "humidity": 79,
+          "rain_mm": 0.0,
+          "wind_kmh": 16.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T01:00",
+          "temperature": 28.3,
+          "humidity": 78,
+          "rain_mm": 0.0,
+          "wind_kmh": 16.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T02:00",
+          "temperature": 28.5,
+          "humidity": 78,
+          "rain_mm": 0.0,
+          "wind_kmh": 16.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T03:00",
+          "temperature": 28.4,
+          "humidity": 78,
+          "rain_mm": 0.0,
+          "wind_kmh": 16.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T04:00",
+          "temperature": 28.4,
+          "humidity": 79,
+          "rain_mm": 0.0,
+          "wind_kmh": 17.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T05:00",
+          "temperature": 28.4,
+          "humidity": 82,
+          "rain_mm": 0.0,
+          "wind_kmh": 16.3,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T06:00",
+          "temperature": 28.8,
+          "humidity": 82,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T07:00",
+          "temperature": 30.1,
+          "humidity": 78,
+          "rain_mm": 0.0,
+          "wind_kmh": 16.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T08:00",
+          "temperature": 31.4,
+          "humidity": 73,
+          "rain_mm": 0.0,
+          "wind_kmh": 19.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T09:00",
+          "temperature": 31.9,
+          "humidity": 68,
+          "rain_mm": 0.1,
+          "wind_kmh": 22.2,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T10:00",
+          "temperature": 32.4,
+          "humidity": 64,
+          "rain_mm": 0.0,
+          "wind_kmh": 24.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T11:00",
+          "temperature": 32.7,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 26.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T12:00",
+          "temperature": 33.0,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 26.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T13:00",
+          "temperature": 33.2,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 26.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T14:00",
+          "temperature": 33.6,
+          "humidity": 61,
+          "rain_mm": 0.0,
+          "wind_kmh": 25.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T15:00",
+          "temperature": 33.1,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 24.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T16:00",
+          "temperature": 33.0,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 23.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T17:00",
+          "temperature": 32.5,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 21.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T18:00",
+          "temperature": 31.7,
+          "humidity": 67,
+          "rain_mm": 0.0,
+          "wind_kmh": 19.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T19:00",
+          "temperature": 30.7,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 17.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T20:00",
+          "temperature": 30.4,
+          "humidity": 71,
+          "rain_mm": 0.0,
+          "wind_kmh": 15.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T21:00",
+          "temperature": 29.9,
+          "humidity": 69,
+          "rain_mm": 0.0,
+          "wind_kmh": 17.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T22:00",
+          "temperature": 29.6,
+          "humidity": 68,
+          "rain_mm": 0.0,
+          "wind_kmh": 17.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-07-31T23:00",
+          "temperature": 29.4,
+          "humidity": 71,
+          "rain_mm": 0.0,
+          "wind_kmh": 16.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T00:00",
+          "temperature": 29.2,
+          "humidity": 73,
+          "rain_mm": 0.0,
+          "wind_kmh": 18.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T01:00",
+          "temperature": 29.2,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 17.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T02:00",
+          "temperature": 29.6,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 17.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T03:00",
+          "temperature": 29.5,
+          "humidity": 74,
+          "rain_mm": 0.0,
+          "wind_kmh": 17.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T04:00",
+          "temperature": 29.0,
+          "humidity": 77,
+          "rain_mm": 0.0,
+          "wind_kmh": 17.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T05:00",
+          "temperature": 28.9,
+          "humidity": 78,
+          "rain_mm": 0.0,
+          "wind_kmh": 16.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T06:00",
+          "temperature": 29.8,
+          "humidity": 76,
+          "rain_mm": 0.0,
+          "wind_kmh": 17.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T07:00",
+          "temperature": 31.1,
+          "humidity": 71,
+          "rain_mm": 0.0,
+          "wind_kmh": 17.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T08:00",
+          "temperature": 31.8,
+          "humidity": 70,
+          "rain_mm": 0.1,
+          "wind_kmh": 20.8,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T09:00",
+          "temperature": 31.9,
+          "humidity": 70,
+          "rain_mm": 0.4,
+          "wind_kmh": 23.6,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T10:00",
+          "temperature": 32.6,
+          "humidity": 67,
+          "rain_mm": 0.1,
+          "wind_kmh": 23.8,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T11:00",
+          "temperature": 33.0,
+          "humidity": 64,
+          "rain_mm": 0.0,
+          "wind_kmh": 24.4,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T12:00",
+          "temperature": 33.4,
+          "humidity": 62,
+          "rain_mm": 0.0,
+          "wind_kmh": 25.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T13:00",
+          "temperature": 33.5,
+          "humidity": 62,
+          "rain_mm": 0.0,
+          "wind_kmh": 25.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T14:00",
+          "temperature": 33.6,
+          "humidity": 61,
+          "rain_mm": 0.0,
+          "wind_kmh": 24.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T15:00",
+          "temperature": 33.3,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 22.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T16:00",
+          "temperature": 33.1,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 21.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T17:00",
+          "temperature": 32.8,
+          "humidity": 64,
+          "rain_mm": 0.0,
+          "wind_kmh": 20.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T18:00",
+          "temperature": 32.3,
+          "humidity": 64,
+          "rain_mm": 0.0,
+          "wind_kmh": 19.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T19:00",
+          "temperature": 31.3,
+          "humidity": 69,
+          "rain_mm": 0.0,
+          "wind_kmh": 15.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T20:00",
+          "temperature": 30.9,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 15.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T21:00",
+          "temperature": 30.6,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 15.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T22:00",
+          "temperature": 30.3,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-01T23:00",
+          "temperature": 29.9,
+          "humidity": 71,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T00:00",
+          "temperature": 29.5,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T01:00",
+          "temperature": 29.3,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T02:00",
+          "temperature": 29.4,
+          "humidity": 69,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T03:00",
+          "temperature": 29.1,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.4,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T04:00",
+          "temperature": 29.0,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 15.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T05:00",
+          "temperature": 28.9,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T06:00",
+          "temperature": 29.7,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T07:00",
+          "temperature": 31.1,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T08:00",
+          "temperature": 33.1,
+          "humidity": 65,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T09:00",
+          "temperature": 34.4,
+          "humidity": 59,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T10:00",
+          "temperature": 35.4,
+          "humidity": 54,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T11:00",
+          "temperature": 36.0,
+          "humidity": 52,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T12:00",
+          "temperature": 35.9,
+          "humidity": 52,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.0,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T13:00",
+          "temperature": 35.7,
+          "humidity": 53,
+          "rain_mm": 0.1,
+          "wind_kmh": 13.8,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T14:00",
+          "temperature": 35.4,
+          "humidity": 52,
+          "rain_mm": 0.1,
+          "wind_kmh": 15.6,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T15:00",
+          "temperature": 35.1,
+          "humidity": 54,
+          "rain_mm": 0.1,
+          "wind_kmh": 15.7,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T16:00",
+          "temperature": 34.6,
+          "humidity": 57,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T17:00",
+          "temperature": 33.9,
+          "humidity": 60,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T18:00",
+          "temperature": 33.1,
+          "humidity": 64,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T19:00",
+          "temperature": 32.2,
+          "humidity": 69,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T20:00",
+          "temperature": 32.3,
+          "humidity": 67,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T21:00",
+          "temperature": 31.5,
+          "humidity": 73,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T22:00",
+          "temperature": 30.5,
+          "humidity": 73,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T23:00",
+          "temperature": 30.1,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T00:00",
+          "temperature": 29.8,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T01:00",
+          "temperature": 29.7,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T02:00",
+          "temperature": 29.9,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T03:00",
+          "temperature": 29.7,
+          "humidity": 75,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.2,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T04:00",
+          "temperature": 29.4,
+          "humidity": 76,
+          "rain_mm": 0.1,
+          "wind_kmh": 14.8,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T05:00",
+          "temperature": 29.4,
+          "humidity": 75,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T06:00",
+          "temperature": 30.2,
+          "humidity": 71,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T07:00",
+          "temperature": 32.0,
+          "humidity": 64,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T08:00",
+          "temperature": 33.9,
+          "humidity": 60,
+          "rain_mm": 0.0,
+          "wind_kmh": 15.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T09:00",
+          "temperature": 35.2,
+          "humidity": 56,
+          "rain_mm": 0.0,
+          "wind_kmh": 15.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T10:00",
+          "temperature": 36.3,
+          "humidity": 52,
+          "rain_mm": 0.0,
+          "wind_kmh": 17.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T11:00",
+          "temperature": 36.5,
+          "humidity": 51,
+          "rain_mm": 0.1,
+          "wind_kmh": 16.9,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T12:00",
+          "temperature": 36.5,
+          "humidity": 49,
+          "rain_mm": 0.3,
+          "wind_kmh": 16.3,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T13:00",
+          "temperature": 37.4,
+          "humidity": 46,
+          "rain_mm": 0.0,
+          "wind_kmh": 16.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T14:00",
+          "temperature": 36.8,
+          "humidity": 48,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T15:00",
+          "temperature": 37.1,
+          "humidity": 47,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T16:00",
+          "temperature": 36.6,
+          "humidity": 47,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.6,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T17:00",
+          "temperature": 34.8,
+          "humidity": 55,
+          "rain_mm": 0.1,
+          "wind_kmh": 16.8,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T18:00",
+          "temperature": 33.2,
+          "humidity": 65,
+          "rain_mm": 0.0,
+          "wind_kmh": 16.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T19:00",
+          "temperature": 31.7,
+          "humidity": 73,
+          "rain_mm": 0.0,
+          "wind_kmh": 15.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T20:00",
+          "temperature": 30.8,
+          "humidity": 75,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.4,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T21:00",
+          "temperature": 30.1,
+          "humidity": 78,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T22:00",
+          "temperature": 29.5,
+          "humidity": 78,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-03T23:00",
+          "temperature": 29.0,
+          "humidity": 80,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T00:00",
+          "temperature": 28.6,
+          "humidity": 80,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T01:00",
+          "temperature": 28.5,
+          "humidity": 79,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.4,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T02:00",
+          "temperature": 28.6,
+          "humidity": 77,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.4,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T03:00",
+          "temperature": 28.3,
+          "humidity": 77,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T04:00",
+          "temperature": 28.2,
+          "humidity": 76,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T05:00",
+          "temperature": 28.0,
+          "humidity": 77,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T06:00",
+          "temperature": 28.7,
+          "humidity": 76,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T07:00",
+          "temperature": 30.6,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T08:00",
+          "temperature": 33.1,
+          "humidity": 61,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T09:00",
+          "temperature": 34.3,
+          "humidity": 57,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T10:00",
+          "temperature": 35.3,
+          "humidity": 54,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T11:00",
+          "temperature": 36.1,
+          "humidity": 52,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T12:00",
+          "temperature": 36.5,
+          "humidity": 51,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.3,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T13:00",
+          "temperature": 37.1,
+          "humidity": 50,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T14:00",
+          "temperature": 36.9,
+          "humidity": 51,
+          "rain_mm": 0.1,
+          "wind_kmh": 13.6,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T15:00",
+          "temperature": 34.6,
+          "humidity": 61,
+          "rain_mm": 0.2,
+          "wind_kmh": 15.1,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T16:00",
+          "temperature": 33.8,
+          "humidity": 65,
+          "rain_mm": 0.0,
+          "wind_kmh": 15.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T17:00",
+          "temperature": 33.2,
+          "humidity": 67,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T18:00",
+          "temperature": 32.8,
+          "humidity": 68,
+          "rain_mm": 0.0,
+          "wind_kmh": 10.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T19:00",
+          "temperature": 31.9,
+          "humidity": 69,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T20:00",
+          "temperature": 31.5,
+          "humidity": 67,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.4,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T21:00",
+          "temperature": 30.3,
+          "humidity": 68,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.0,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T22:00",
+          "temperature": 29.7,
+          "humidity": 69,
+          "rain_mm": 0.0,
+          "wind_kmh": 10.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-04T23:00",
+          "temperature": 29.3,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T00:00",
+          "temperature": 28.9,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.4,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T01:00",
+          "temperature": 28.5,
+          "humidity": 74,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T02:00",
+          "temperature": 28.3,
+          "humidity": 74,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T03:00",
+          "temperature": 27.8,
+          "humidity": 77,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T04:00",
+          "temperature": 27.5,
+          "humidity": 79,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T05:00",
+          "temperature": 27.2,
+          "humidity": 80,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T06:00",
+          "temperature": 28.2,
+          "humidity": 76,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T07:00",
+          "temperature": 30.2,
+          "humidity": 69,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T08:00",
+          "temperature": 32.3,
+          "humidity": 59,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T09:00",
+          "temperature": 33.8,
+          "humidity": 55,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T10:00",
+          "temperature": 35.1,
+          "humidity": 51,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T11:00",
+          "temperature": 35.9,
+          "humidity": 48,
+          "rain_mm": 0.0,
+          "wind_kmh": 10.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T12:00",
+          "temperature": 36.5,
+          "humidity": 46,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T13:00",
+          "temperature": 36.6,
+          "humidity": 46,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T14:00",
+          "temperature": 36.6,
+          "humidity": 48,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.3,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T15:00",
+          "temperature": 35.4,
+          "humidity": 52,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.1,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T16:00",
+          "temperature": 35.1,
+          "humidity": 52,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T17:00",
+          "temperature": 34.4,
+          "humidity": 54,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T18:00",
+          "temperature": 33.3,
+          "humidity": 59,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.7,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T19:00",
+          "temperature": 32.0,
+          "humidity": 66,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T20:00",
+          "temperature": 32.2,
+          "humidity": 61,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T21:00",
+          "temperature": 31.3,
+          "humidity": 64,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.6,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T22:00",
+          "temperature": 30.5,
+          "humidity": 65,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.0,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T23:00",
+          "temperature": 30.0,
+          "humidity": 66,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.1,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T00:00",
+          "temperature": 29.4,
+          "humidity": 67,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.2,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T01:00",
+          "temperature": 28.8,
+          "humidity": 69,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.0,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T02:00",
+          "temperature": 28.4,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.2,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T03:00",
+          "temperature": 27.7,
+          "humidity": 73,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.1,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T04:00",
+          "temperature": 27.2,
+          "humidity": 73,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.3,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T05:00",
+          "temperature": 27.0,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.7,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T06:00",
+          "temperature": 27.9,
+          "humidity": 67,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.6,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T07:00",
+          "temperature": 30.6,
+          "humidity": 56,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.2,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T08:00",
+          "temperature": 33.5,
+          "humidity": 49,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.4,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T09:00",
+          "temperature": 35.2,
+          "humidity": 45,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.8,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T10:00",
+          "temperature": 36.0,
+          "humidity": 46,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.7,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T11:00",
+          "temperature": 36.2,
+          "humidity": 48,
+          "rain_mm": 0.0,
+          "wind_kmh": 10.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T12:00",
+          "temperature": 36.3,
+          "humidity": 50,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.4,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T13:00",
+          "temperature": 36.4,
+          "humidity": 49,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T14:00",
+          "temperature": 36.9,
+          "humidity": 47,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T15:00",
+          "temperature": 35.9,
+          "humidity": 50,
+          "rain_mm": 0.0,
+          "wind_kmh": 10.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T16:00",
+          "temperature": 35.7,
+          "humidity": 49,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.4,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T17:00",
+          "temperature": 35.0,
+          "humidity": 51,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T18:00",
+          "temperature": 34.0,
+          "humidity": 55,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T19:00",
+          "temperature": 32.7,
+          "humidity": 62,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T20:00",
+          "temperature": 32.7,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T21:00",
+          "temperature": 31.5,
+          "humidity": 74,
+          "rain_mm": 0.0,
+          "wind_kmh": 1.8,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T22:00",
+          "temperature": 30.9,
+          "humidity": 80,
+          "rain_mm": 0.0,
+          "wind_kmh": 1.3,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-06T23:00",
+          "temperature": 30.1,
+          "humidity": 80,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.3,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T00:00",
+          "temperature": 29.2,
+          "humidity": 81,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.7,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T01:00",
+          "temperature": 28.7,
+          "humidity": 79,
+          "rain_mm": 0.0,
+          "wind_kmh": 2.9,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T02:00",
+          "temperature": 28.5,
+          "humidity": 77,
+          "rain_mm": 0.0,
+          "wind_kmh": 1.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T03:00",
+          "temperature": 27.9,
+          "humidity": 79,
+          "rain_mm": 0.0,
+          "wind_kmh": 1.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T04:00",
+          "temperature": 27.6,
+          "humidity": 78,
+          "rain_mm": 0.0,
+          "wind_kmh": 2.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T05:00",
+          "temperature": 26.7,
+          "humidity": 80,
+          "rain_mm": 0.0,
+          "wind_kmh": 3.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T06:00",
+          "temperature": 27.5,
+          "humidity": 77,
+          "rain_mm": 0.0,
+          "wind_kmh": 3.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T07:00",
+          "temperature": 30.3,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T08:00",
+          "temperature": 31.9,
+          "humidity": 65,
+          "rain_mm": 0.0,
+          "wind_kmh": 16.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T09:00",
+          "temperature": 31.8,
+          "humidity": 66,
+          "rain_mm": 0.0,
+          "wind_kmh": 22.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T10:00",
+          "temperature": 32.4,
+          "humidity": 61,
+          "rain_mm": 0.0,
+          "wind_kmh": 25.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T11:00",
+          "temperature": 32.7,
+          "humidity": 58,
+          "rain_mm": 0.0,
+          "wind_kmh": 27.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T12:00",
+          "temperature": 32.8,
+          "humidity": 56,
+          "rain_mm": 0.0,
+          "wind_kmh": 29.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T13:00",
+          "temperature": 32.8,
+          "humidity": 54,
+          "rain_mm": 0.0,
+          "wind_kmh": 30.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T14:00",
+          "temperature": 32.0,
+          "humidity": 54,
+          "rain_mm": 0.0,
+          "wind_kmh": 32.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T15:00",
+          "temperature": 30.7,
+          "humidity": 56,
+          "rain_mm": 0.0,
+          "wind_kmh": 31.6,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T16:00",
+          "temperature": 30.0,
+          "humidity": 57,
+          "rain_mm": 0.0,
+          "wind_kmh": 30.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T17:00",
+          "temperature": 29.3,
+          "humidity": 58,
+          "rain_mm": 0.0,
+          "wind_kmh": 30.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T18:00",
+          "temperature": 27.9,
+          "humidity": 62,
+          "rain_mm": 0.0,
+          "wind_kmh": 30.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T19:00",
+          "temperature": 26.9,
+          "humidity": 64,
+          "rain_mm": 0.0,
+          "wind_kmh": 29.5,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T20:00",
+          "temperature": 26.3,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 29.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T21:00",
+          "temperature": 25.9,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 30.2,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T22:00",
+          "temperature": 25.4,
+          "humidity": 65,
+          "rain_mm": 0.0,
+          "wind_kmh": 30.9,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-07T23:00",
+          "temperature": 24.8,
+          "humidity": 65,
+          "rain_mm": 0.0,
+          "wind_kmh": 31.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T00:00",
+          "temperature": 24.2,
+          "humidity": 65,
+          "rain_mm": 0.0,
+          "wind_kmh": 31.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T01:00",
+          "temperature": 23.4,
+          "humidity": 64,
+          "rain_mm": 0.0,
+          "wind_kmh": 31.8,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T02:00",
+          "temperature": 22.9,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 31.6,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T03:00",
+          "temperature": 22.1,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 31.3,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T04:00",
+          "temperature": 21.4,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 31.7,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T05:00",
+          "temperature": 20.8,
+          "humidity": 64,
+          "rain_mm": 0.0,
+          "wind_kmh": 31.2,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T06:00",
+          "temperature": 20.6,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 30.8,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T07:00",
+          "temperature": 20.9,
+          "humidity": 61,
+          "rain_mm": 0.0,
+          "wind_kmh": 30.8,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T08:00",
+          "temperature": 22.1,
+          "humidity": 57,
+          "rain_mm": 0.0,
+          "wind_kmh": 31.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T09:00",
+          "temperature": 23.1,
+          "humidity": 52,
+          "rain_mm": 0.0,
+          "wind_kmh": 31.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T10:00",
+          "temperature": 24.4,
+          "humidity": 47,
+          "rain_mm": 0.0,
+          "wind_kmh": 30.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T11:00",
+          "temperature": 25.6,
+          "humidity": 43,
+          "rain_mm": 0.0,
+          "wind_kmh": 29.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T12:00",
+          "temperature": 26.7,
+          "humidity": 40,
+          "rain_mm": 0.0,
+          "wind_kmh": 29.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T13:00",
+          "temperature": 27.5,
+          "humidity": 37,
+          "rain_mm": 0.0,
+          "wind_kmh": 29.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T14:00",
+          "temperature": 27.9,
+          "humidity": 36,
+          "rain_mm": 0.0,
+          "wind_kmh": 28.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T15:00",
+          "temperature": 27.9,
+          "humidity": 37,
+          "rain_mm": 0.0,
+          "wind_kmh": 26.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T16:00",
+          "temperature": 27.8,
+          "humidity": 39,
+          "rain_mm": 0.0,
+          "wind_kmh": 25.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T17:00",
+          "temperature": 27.2,
+          "humidity": 42,
+          "rain_mm": 0.0,
+          "wind_kmh": 24.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T18:00",
+          "temperature": 26.3,
+          "humidity": 46,
+          "rain_mm": 0.0,
+          "wind_kmh": 24.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T19:00",
+          "temperature": 25.4,
+          "humidity": 50,
+          "rain_mm": 0.0,
+          "wind_kmh": 23.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T20:00",
+          "temperature": 24.9,
+          "humidity": 53,
+          "rain_mm": 0.0,
+          "wind_kmh": 22.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T21:00",
+          "temperature": 24.3,
+          "humidity": 56,
+          "rain_mm": 0.0,
+          "wind_kmh": 23.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T22:00",
+          "temperature": 23.8,
+          "humidity": 58,
+          "rain_mm": 0.0,
+          "wind_kmh": 22.5,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-08T23:00",
+          "temperature": 23.5,
+          "humidity": 59,
+          "rain_mm": 0.0,
+          "wind_kmh": 22.2,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        }
+      ]
+    },
+    "Туаньшань / Бэйхай": {
+      "display_name": "Туаньшань / Бэйхай",
+      "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=40.34&longitude=122.23&start_date=2026-08-02&end_date=2026-08-02&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Cweather_code%2Cwind_speed_10m&timezone=Asia%2FShanghai",
+      "hourly": [
+        {
+          "time": "2026-08-02T00:00",
+          "temperature": 28.6,
+          "humidity": 75,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T01:00",
+          "temperature": 28.6,
+          "humidity": 73,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T02:00",
+          "temperature": 28.5,
+          "humidity": 73,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T03:00",
+          "temperature": 28.3,
+          "humidity": 73,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T04:00",
+          "temperature": 28.4,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T05:00",
+          "temperature": 28.4,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T06:00",
+          "temperature": 29.1,
+          "humidity": 73,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T07:00",
+          "temperature": 30.5,
+          "humidity": 71,
+          "rain_mm": 0.0,
+          "wind_kmh": 13.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T08:00",
+          "temperature": 32.3,
+          "humidity": 66,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T09:00",
+          "temperature": 33.3,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 15.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T10:00",
+          "temperature": 34.4,
+          "humidity": 57,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T11:00",
+          "temperature": 35.3,
+          "humidity": 54,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T12:00",
+          "temperature": 34.4,
+          "humidity": 56,
+          "rain_mm": 0.2,
+          "wind_kmh": 13.8,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T13:00",
+          "temperature": 34.2,
+          "humidity": 57,
+          "rain_mm": 0.1,
+          "wind_kmh": 9.0,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T14:00",
+          "temperature": 34.5,
+          "humidity": 54,
+          "rain_mm": 0.2,
+          "wind_kmh": 13.8,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T15:00",
+          "temperature": 34.2,
+          "humidity": 56,
+          "rain_mm": 0.2,
+          "wind_kmh": 15.5,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T16:00",
+          "temperature": 34.0,
+          "humidity": 57,
+          "rain_mm": 0.0,
+          "wind_kmh": 14.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T17:00",
+          "temperature": 33.5,
+          "humidity": 59,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T18:00",
+          "temperature": 32.8,
+          "humidity": 63,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T19:00",
+          "temperature": 31.2,
+          "humidity": 74,
+          "rain_mm": 0.0,
+          "wind_kmh": 2.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T20:00",
+          "temperature": 30.6,
+          "humidity": 78,
+          "rain_mm": 0.0,
+          "wind_kmh": 2.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T21:00",
+          "temperature": 29.6,
+          "humidity": 82,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T22:00",
+          "temperature": 29.2,
+          "humidity": 80,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-02T23:00",
+          "temperature": 28.7,
+          "humidity": 79,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        }
+      ]
+    },
+    "Далянь": {
+      "display_name": "Далянь",
+      "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=38.914&longitude=121.6147&start_date=2026-08-05&end_date=2026-08-05&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Cweather_code%2Cwind_speed_10m&timezone=Asia%2FShanghai",
+      "hourly": [
+        {
+          "time": "2026-08-05T00:00",
+          "temperature": 27.3,
+          "humidity": 87,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T01:00",
+          "temperature": 27.0,
+          "humidity": 86,
+          "rain_mm": 0.0,
+          "wind_kmh": 1.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T02:00",
+          "temperature": 27.0,
+          "humidity": 86,
+          "rain_mm": 0.0,
+          "wind_kmh": 1.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T03:00",
+          "temperature": 26.4,
+          "humidity": 89,
+          "rain_mm": 0.0,
+          "wind_kmh": 0.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T04:00",
+          "temperature": 26.0,
+          "humidity": 91,
+          "rain_mm": 0.0,
+          "wind_kmh": 2.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T05:00",
+          "temperature": 25.8,
+          "humidity": 92,
+          "rain_mm": 0.0,
+          "wind_kmh": 3.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T06:00",
+          "temperature": 26.6,
+          "humidity": 88,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T07:00",
+          "temperature": 28.2,
+          "humidity": 78,
+          "rain_mm": 0.0,
+          "wind_kmh": 3.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T08:00",
+          "temperature": 29.5,
+          "humidity": 75,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T09:00",
+          "temperature": 30.3,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.4,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T10:00",
+          "temperature": 30.9,
+          "humidity": 69,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T11:00",
+          "temperature": 31.5,
+          "humidity": 64,
+          "rain_mm": 0.0,
+          "wind_kmh": 10.3,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T12:00",
+          "temperature": 31.6,
+          "humidity": 61,
+          "rain_mm": 0.0,
+          "wind_kmh": 11.3,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T13:00",
+          "temperature": 32.0,
+          "humidity": 62,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.8,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T14:00",
+          "temperature": 31.1,
+          "humidity": 71,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.7,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T15:00",
+          "temperature": 30.6,
+          "humidity": 75,
+          "rain_mm": 0.0,
+          "wind_kmh": 10.7,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T16:00",
+          "temperature": 31.0,
+          "humidity": 73,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.0,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T17:00",
+          "temperature": 30.7,
+          "humidity": 74,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.0,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T18:00",
+          "temperature": 29.9,
+          "humidity": 78,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.9,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T19:00",
+          "temperature": 28.9,
+          "humidity": 83,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.8,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T20:00",
+          "temperature": 27.6,
+          "humidity": 88,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.2,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T21:00",
+          "temperature": 27.1,
+          "humidity": 91,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.0,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T22:00",
+          "temperature": 27.2,
+          "humidity": 90,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.0,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-05T23:00",
+          "temperature": 27.4,
+          "humidity": 89,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.4,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        }
+      ]
+    },
+    "Пекин": {
+      "display_name": "Пекин",
+      "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=39.9042&longitude=116.4074&start_date=2026-08-09&end_date=2026-08-13&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Cweather_code%2Cwind_speed_10m&timezone=Asia%2FShanghai",
+      "hourly": [
+        {
+          "time": "2026-08-09T00:00",
+          "temperature": 25.6,
+          "humidity": 67,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.0,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T01:00",
+          "temperature": 25.2,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.9,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T02:00",
+          "temperature": 25.1,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.8,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T03:00",
+          "temperature": 24.8,
+          "humidity": 76,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.6,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T04:00",
+          "temperature": 24.8,
+          "humidity": 75,
+          "rain_mm": 0.0,
+          "wind_kmh": 3.6,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T05:00",
+          "temperature": 23.9,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T06:00",
+          "temperature": 23.1,
+          "humidity": 69,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.4,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T07:00",
+          "temperature": 23.4,
+          "humidity": 61,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.0,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T08:00",
+          "temperature": 24.7,
+          "humidity": 54,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.9,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T09:00",
+          "temperature": 26.3,
+          "humidity": 47,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.9,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T10:00",
+          "temperature": 27.7,
+          "humidity": 46,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T11:00",
+          "temperature": 29.0,
+          "humidity": 45,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T12:00",
+          "temperature": 30.4,
+          "humidity": 43,
+          "rain_mm": 0.0,
+          "wind_kmh": 3.6,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T13:00",
+          "temperature": 31.8,
+          "humidity": 42,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.7,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T14:00",
+          "temperature": 31.1,
+          "humidity": 47,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.4,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T15:00",
+          "temperature": 30.9,
+          "humidity": 50,
+          "rain_mm": 0.0,
+          "wind_kmh": 10.3,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T16:00",
+          "temperature": 29.9,
+          "humidity": 55,
+          "rain_mm": 0.0,
+          "wind_kmh": 12.8,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T17:00",
+          "temperature": 29.3,
+          "humidity": 57,
+          "rain_mm": 0.0,
+          "wind_kmh": 10.6,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T18:00",
+          "temperature": 29.3,
+          "humidity": 57,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.4,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T19:00",
+          "temperature": 28.8,
+          "humidity": 59,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.8,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T20:00",
+          "temperature": 28.3,
+          "humidity": 62,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.1,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T21:00",
+          "temperature": 27.6,
+          "humidity": 60,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T22:00",
+          "temperature": 27.0,
+          "humidity": 58,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-09T23:00",
+          "temperature": 26.3,
+          "humidity": 62,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.4,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T00:00",
+          "temperature": 25.7,
+          "humidity": 68,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T01:00",
+          "temperature": 25.5,
+          "humidity": 69,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T02:00",
+          "temperature": 25.2,
+          "humidity": 67,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T03:00",
+          "temperature": 24.3,
+          "humidity": 68,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.5,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T04:00",
+          "temperature": 23.6,
+          "humidity": 69,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.3,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T05:00",
+          "temperature": 23.3,
+          "humidity": 71,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.6,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T06:00",
+          "temperature": 23.2,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.6,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T07:00",
+          "temperature": 23.9,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.6,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T08:00",
+          "temperature": 25.8,
+          "humidity": 60,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T09:00",
+          "temperature": 27.5,
+          "humidity": 50,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T10:00",
+          "temperature": 29.1,
+          "humidity": 47,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T11:00",
+          "temperature": 30.4,
+          "humidity": 45,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T12:00",
+          "temperature": 31.4,
+          "humidity": 43,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T13:00",
+          "temperature": 32.6,
+          "humidity": 41,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T14:00",
+          "temperature": 32.9,
+          "humidity": 43,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T15:00",
+          "temperature": 32.3,
+          "humidity": 45,
+          "rain_mm": 0.0,
+          "wind_kmh": 10.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T16:00",
+          "temperature": 32.4,
+          "humidity": 46,
+          "rain_mm": 0.0,
+          "wind_kmh": 10.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T17:00",
+          "temperature": 31.8,
+          "humidity": 48,
+          "rain_mm": 0.0,
+          "wind_kmh": 10.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T18:00",
+          "temperature": 30.9,
+          "humidity": 50,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T19:00",
+          "temperature": 30.0,
+          "humidity": 55,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T20:00",
+          "temperature": 30.0,
+          "humidity": 56,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T21:00",
+          "temperature": 29.4,
+          "humidity": 58,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T22:00",
+          "temperature": 28.8,
+          "humidity": 59,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-10T23:00",
+          "temperature": 28.2,
+          "humidity": 62,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.5,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T00:00",
+          "temperature": 27.6,
+          "humidity": 65,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T01:00",
+          "temperature": 27.0,
+          "humidity": 69,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T02:00",
+          "temperature": 26.9,
+          "humidity": 70,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T03:00",
+          "temperature": 26.3,
+          "humidity": 74,
+          "rain_mm": 0.0,
+          "wind_kmh": 3.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T04:00",
+          "temperature": 26.0,
+          "humidity": 77,
+          "rain_mm": 0.0,
+          "wind_kmh": 2.4,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T05:00",
+          "temperature": 25.9,
+          "humidity": 77,
+          "rain_mm": 0.0,
+          "wind_kmh": 1.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T06:00",
+          "temperature": 25.7,
+          "humidity": 78,
+          "rain_mm": 0.0,
+          "wind_kmh": 2.4,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T07:00",
+          "temperature": 26.3,
+          "humidity": 74,
+          "rain_mm": 0.0,
+          "wind_kmh": 3.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T08:00",
+          "temperature": 27.7,
+          "humidity": 71,
+          "rain_mm": 0.1,
+          "wind_kmh": 2.1,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T09:00",
+          "temperature": 28.8,
+          "humidity": 66,
+          "rain_mm": 0.3,
+          "wind_kmh": 1.3,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T10:00",
+          "temperature": 30.1,
+          "humidity": 63,
+          "rain_mm": 0.6,
+          "wind_kmh": 4.3,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T11:00",
+          "temperature": 31.3,
+          "humidity": 58,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.2,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T12:00",
+          "temperature": 31.5,
+          "humidity": 57,
+          "rain_mm": 0.1,
+          "wind_kmh": 8.3,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T13:00",
+          "temperature": 31.1,
+          "humidity": 61,
+          "rain_mm": 1.1,
+          "wind_kmh": 8.7,
+          "weather_code": 55,
+          "weather": "Сильная морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T14:00",
+          "temperature": 28.9,
+          "humidity": 68,
+          "rain_mm": 0.1,
+          "wind_kmh": 5.7,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T15:00",
+          "temperature": 30.5,
+          "humidity": 61,
+          "rain_mm": 0.3,
+          "wind_kmh": 10.6,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T16:00",
+          "temperature": 29.1,
+          "humidity": 69,
+          "rain_mm": 0.6,
+          "wind_kmh": 10.1,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T17:00",
+          "temperature": 29.0,
+          "humidity": 72,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.6,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T18:00",
+          "temperature": 29.2,
+          "humidity": 71,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.4,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T19:00",
+          "temperature": 28.7,
+          "humidity": 73,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.6,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T20:00",
+          "temperature": 27.5,
+          "humidity": 83,
+          "rain_mm": 0.0,
+          "wind_kmh": 8.7,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T21:00",
+          "temperature": 26.8,
+          "humidity": 88,
+          "rain_mm": 0.4,
+          "wind_kmh": 5.6,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T22:00",
+          "temperature": 26.6,
+          "humidity": 89,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.7,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T23:00",
+          "temperature": 25.8,
+          "humidity": 89,
+          "rain_mm": 0.1,
+          "wind_kmh": 7.6,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T00:00",
+          "temperature": 24.4,
+          "humidity": 93,
+          "rain_mm": 0.9,
+          "wind_kmh": 6.3,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T01:00",
+          "temperature": 24.0,
+          "humidity": 95,
+          "rain_mm": 2.2,
+          "wind_kmh": 1.5,
+          "weather_code": 61,
+          "weather": "Небольшой дождь",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T02:00",
+          "temperature": 25.0,
+          "humidity": 98,
+          "rain_mm": 2.4,
+          "wind_kmh": 4.1,
+          "weather_code": 61,
+          "weather": "Небольшой дождь",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T03:00",
+          "temperature": 24.6,
+          "humidity": 95,
+          "rain_mm": 1.5,
+          "wind_kmh": 7.3,
+          "weather_code": 61,
+          "weather": "Небольшой дождь",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T04:00",
+          "temperature": 24.3,
+          "humidity": 96,
+          "rain_mm": 1.6,
+          "wind_kmh": 5.0,
+          "weather_code": 61,
+          "weather": "Небольшой дождь",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T05:00",
+          "temperature": 24.1,
+          "humidity": 97,
+          "rain_mm": 0.8,
+          "wind_kmh": 4.5,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T06:00",
+          "temperature": 24.3,
+          "humidity": 95,
+          "rain_mm": 0.3,
+          "wind_kmh": 4.3,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T07:00",
+          "temperature": 24.5,
+          "humidity": 92,
+          "rain_mm": 0.8,
+          "wind_kmh": 1.2,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T08:00",
+          "temperature": 24.8,
+          "humidity": 89,
+          "rain_mm": 1.6,
+          "wind_kmh": 4.3,
+          "weather_code": 61,
+          "weather": "Небольшой дождь",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T09:00",
+          "temperature": 24.7,
+          "humidity": 91,
+          "rain_mm": 0.7,
+          "wind_kmh": 5.2,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T10:00",
+          "temperature": 24.7,
+          "humidity": 90,
+          "rain_mm": 0.8,
+          "wind_kmh": 1.9,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T11:00",
+          "temperature": 24.9,
+          "humidity": 89,
+          "rain_mm": 1.1,
+          "wind_kmh": 1.3,
+          "weather_code": 55,
+          "weather": "Сильная морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T12:00",
+          "temperature": 25.6,
+          "humidity": 86,
+          "rain_mm": 0.7,
+          "wind_kmh": 3.0,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T13:00",
+          "temperature": 25.9,
+          "humidity": 85,
+          "rain_mm": 0.7,
+          "wind_kmh": 2.7,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T14:00",
+          "temperature": 23.8,
+          "humidity": 93,
+          "rain_mm": 1.0,
+          "wind_kmh": 6.2,
+          "weather_code": 55,
+          "weather": "Сильная морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T15:00",
+          "temperature": 24.9,
+          "humidity": 91,
+          "rain_mm": 0.4,
+          "wind_kmh": 3.8,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T16:00",
+          "temperature": 26.0,
+          "humidity": 86,
+          "rain_mm": 0.1,
+          "wind_kmh": 3.5,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T17:00",
+          "temperature": 25.8,
+          "humidity": 87,
+          "rain_mm": 0.3,
+          "wind_kmh": 3.8,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T18:00",
+          "temperature": 25.5,
+          "humidity": 85,
+          "rain_mm": 0.4,
+          "wind_kmh": 3.6,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T19:00",
+          "temperature": 25.0,
+          "humidity": 90,
+          "rain_mm": 0.2,
+          "wind_kmh": 1.3,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T20:00",
+          "temperature": 23.4,
+          "humidity": 97,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.4,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T21:00",
+          "temperature": 23.2,
+          "humidity": 96,
+          "rain_mm": 4.9,
+          "wind_kmh": 4.6,
+          "weather_code": 63,
+          "weather": "Дождь",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T22:00",
+          "temperature": 23.0,
+          "humidity": 97,
+          "rain_mm": 3.2,
+          "wind_kmh": 4.4,
+          "weather_code": 63,
+          "weather": "Дождь",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-12T23:00",
+          "temperature": 23.3,
+          "humidity": 95,
+          "rain_mm": 2.0,
+          "wind_kmh": 3.1,
+          "weather_code": 61,
+          "weather": "Небольшой дождь",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T00:00",
+          "temperature": 23.2,
+          "humidity": 94,
+          "rain_mm": 2.2,
+          "wind_kmh": 4.8,
+          "weather_code": 61,
+          "weather": "Небольшой дождь",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T01:00",
+          "temperature": 22.9,
+          "humidity": 96,
+          "rain_mm": 2.7,
+          "wind_kmh": 5.1,
+          "weather_code": 63,
+          "weather": "Дождь",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T02:00",
+          "temperature": 22.6,
+          "humidity": 98,
+          "rain_mm": 3.0,
+          "wind_kmh": 8.1,
+          "weather_code": 63,
+          "weather": "Дождь",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T03:00",
+          "temperature": 22.3,
+          "humidity": 98,
+          "rain_mm": 1.6,
+          "wind_kmh": 3.9,
+          "weather_code": 61,
+          "weather": "Небольшой дождь",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T04:00",
+          "temperature": 22.5,
+          "humidity": 96,
+          "rain_mm": 0.1,
+          "wind_kmh": 2.6,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T05:00",
+          "temperature": 22.5,
+          "humidity": 96,
+          "rain_mm": 0.2,
+          "wind_kmh": 2.9,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T06:00",
+          "temperature": 22.7,
+          "humidity": 95,
+          "rain_mm": 0.1,
+          "wind_kmh": 5.6,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T07:00",
+          "temperature": 23.3,
+          "humidity": 94,
+          "rain_mm": 0.1,
+          "wind_kmh": 4.7,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T08:00",
+          "temperature": 25.0,
+          "humidity": 90,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T09:00",
+          "temperature": 26.4,
+          "humidity": 82,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T10:00",
+          "temperature": 27.8,
+          "humidity": 68,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T11:00",
+          "temperature": 28.5,
+          "humidity": 59,
+          "rain_mm": 0.1,
+          "wind_kmh": 10.3,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T12:00",
+          "temperature": 29.2,
+          "humidity": 56,
+          "rain_mm": 0.0,
+          "wind_kmh": 10.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T13:00",
+          "temperature": 29.2,
+          "humidity": 55,
+          "rain_mm": 0.0,
+          "wind_kmh": 9.4,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T14:00",
+          "temperature": 28.7,
+          "humidity": 56,
+          "rain_mm": 0.4,
+          "wind_kmh": 9.9,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T15:00",
+          "temperature": 27.7,
+          "humidity": 65,
+          "rain_mm": 0.3,
+          "wind_kmh": 8.0,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T16:00",
+          "temperature": 28.0,
+          "humidity": 67,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T17:00",
+          "temperature": 27.9,
+          "humidity": 64,
+          "rain_mm": 0.0,
+          "wind_kmh": 7.3,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T18:00",
+          "temperature": 26.7,
+          "humidity": 71,
+          "rain_mm": 0.1,
+          "wind_kmh": 7.1,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T19:00",
+          "temperature": 25.8,
+          "humidity": 77,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T20:00",
+          "temperature": 25.7,
+          "humidity": 76,
+          "rain_mm": 0.0,
+          "wind_kmh": 4.5,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T21:00",
+          "temperature": 25.0,
+          "humidity": 82,
+          "rain_mm": 0.0,
+          "wind_kmh": 2.4,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T22:00",
+          "temperature": 24.8,
+          "humidity": 85,
+          "rain_mm": 0.0,
+          "wind_kmh": 2.4,
+          "weather_code": 2,
+          "weather": "Переменная облачность",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-13T23:00",
+          "temperature": 24.5,
+          "humidity": 86,
+          "rain_mm": 0.0,
+          "wind_kmh": 0.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        }
+      ]
+    },
+    "Великая Китайская стена / Пекин": {
+      "display_name": "Великая Китайская стена / Пекин",
+      "source_url": "https://archive-api.open-meteo.com/v1/archive?latitude=40.4319&longitude=116.5704&start_date=2026-08-11&end_date=2026-08-11&hourly=temperature_2m%2Crelative_humidity_2m%2Cprecipitation%2Cweather_code%2Cwind_speed_10m&timezone=Asia%2FShanghai",
+      "hourly": [
+        {
+          "time": "2026-08-11T00:00",
+          "temperature": 22.1,
+          "humidity": 83,
+          "rain_mm": 0.0,
+          "wind_kmh": 1.4,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T01:00",
+          "temperature": 21.8,
+          "humidity": 85,
+          "rain_mm": 0.0,
+          "wind_kmh": 0.9,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T02:00",
+          "temperature": 21.9,
+          "humidity": 86,
+          "rain_mm": 0.0,
+          "wind_kmh": 1.1,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T03:00",
+          "temperature": 21.3,
+          "humidity": 88,
+          "rain_mm": 0.0,
+          "wind_kmh": 2.0,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T04:00",
+          "temperature": 21.0,
+          "humidity": 89,
+          "rain_mm": 0.0,
+          "wind_kmh": 1.8,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T05:00",
+          "temperature": 20.7,
+          "humidity": 91,
+          "rain_mm": 0.0,
+          "wind_kmh": 1.4,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T06:00",
+          "temperature": 21.1,
+          "humidity": 92,
+          "rain_mm": 0.0,
+          "wind_kmh": 0.7,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T07:00",
+          "temperature": 22.8,
+          "humidity": 88,
+          "rain_mm": 0.0,
+          "wind_kmh": 2.6,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T08:00",
+          "temperature": 24.4,
+          "humidity": 80,
+          "rain_mm": 0.0,
+          "wind_kmh": 5.2,
+          "weather_code": 0,
+          "weather": "Ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T09:00",
+          "temperature": 25.3,
+          "humidity": 74,
+          "rain_mm": 0.0,
+          "wind_kmh": 6.5,
+          "weather_code": 3,
+          "weather": "Пасмурно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T10:00",
+          "temperature": 25.5,
+          "humidity": 75,
+          "rain_mm": 0.1,
+          "wind_kmh": 7.8,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T11:00",
+          "temperature": 26.0,
+          "humidity": 76,
+          "rain_mm": 0.6,
+          "wind_kmh": 8.3,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T12:00",
+          "temperature": 26.1,
+          "humidity": 83,
+          "rain_mm": 0.5,
+          "wind_kmh": 10.0,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T13:00",
+          "temperature": 26.5,
+          "humidity": 80,
+          "rain_mm": 0.1,
+          "wind_kmh": 9.2,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T14:00",
+          "temperature": 27.8,
+          "humidity": 68,
+          "rain_mm": 0.1,
+          "wind_kmh": 11.5,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T15:00",
+          "temperature": 27.0,
+          "humidity": 73,
+          "rain_mm": 0.6,
+          "wind_kmh": 9.7,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T16:00",
+          "temperature": 25.4,
+          "humidity": 80,
+          "rain_mm": 0.4,
+          "wind_kmh": 14.7,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T17:00",
+          "temperature": 23.7,
+          "humidity": 94,
+          "rain_mm": 0.8,
+          "wind_kmh": 3.5,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T18:00",
+          "temperature": 24.0,
+          "humidity": 92,
+          "rain_mm": 0.0,
+          "wind_kmh": 3.3,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T19:00",
+          "temperature": 23.2,
+          "humidity": 96,
+          "rain_mm": 0.0,
+          "wind_kmh": 2.8,
+          "weather_code": 1,
+          "weather": "Преимущественно ясно",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T20:00",
+          "temperature": 22.9,
+          "humidity": 100,
+          "rain_mm": 0.1,
+          "wind_kmh": 2.1,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T21:00",
+          "temperature": 22.7,
+          "humidity": 99,
+          "rain_mm": 0.4,
+          "wind_kmh": 4.4,
+          "weather_code": 51,
+          "weather": "Слабая морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T22:00",
+          "temperature": 22.4,
+          "humidity": 100,
+          "rain_mm": 0.5,
+          "wind_kmh": 6.1,
+          "weather_code": 53,
+          "weather": "Морось",
+          "precipitation_probability": null
+        },
+        {
+          "time": "2026-08-11T23:00",
+          "temperature": 21.6,
+          "humidity": 100,
+          "rain_mm": 1.1,
+          "wind_kmh": 4.7,
+          "weather_code": 55,
+          "weather": "Сильная морось",
+          "precipitation_probability": null
+        }
+      ]
+    }
+  }
+}

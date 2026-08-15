@@ -41,6 +41,11 @@ with sync_playwright() as p:
     check(f'{width} rates four cards',page.locator('.rate-card').count()==4,str(page.locator('.rate-card').count()))
     check(f'{width} rates finite',page.locator('.rate-card').evaluate_all("els=>els.every(e=>!/NaN|undefined|null/.test(e.innerText))"))
     check(f'{width} rate rows',page.locator('#ratesBody tr').count()>=1,str(page.locator('#ratesBody tr').count()))
+    hint='Поездка завершена: ручное обновление отключено'
+    for selector in ('#refreshDayWeather','#refreshWeather','#refreshRates'):
+      if page.locator(selector).count():
+        check(f'{width} {selector} disabled',page.locator(selector).is_disabled(),page.locator(selector).get_attribute('title') or '')
+        check(f'{width} {selector} hint',hint in (page.locator(selector).get_attribute('title') or ''),page.locator(selector).get_attribute('title') or '')
     check(f'{width} console clean',not console,'; '.join(console))
     page.close()
 
@@ -50,8 +55,8 @@ with sync_playwright() as p:
   page.reload(wait_until='networkidle')
   page.wait_for_selector('.detailed-card')
   unlock_private(page,'packing')
-  check('visit geography visible',page.locator('#visitStats').is_visible())
-  check('visit geography status',page.locator('#visitStatsStatus').inner_text().strip()!='',page.locator('#visitStatsStatus').inner_text())
+  check('visit geography removed',page.locator('#visitStats').count()==0)
+  check('packing file buttons visible',page.locator('#exportPacking').is_visible() and page.locator('#importPackingButton').is_visible())
   for category in ('base','shoot','weather','clothes','hygiene'):
     page.locator(f'#packingFilters button[data-filter={category}]').click()
     name='QA-'+category
@@ -75,6 +80,7 @@ with sync_playwright() as p:
   check('impression text persists',page.locator('.impression-card').first.locator('textarea').input_value()=='QA impression text')
   check('impression title persists',page.locator('.impression-card').first.locator('.impression-title').input_value()=='QA diary')
   check('impression export visible',page.locator('#exportImpressions').is_visible())
+  check('impression import visible',page.locator('#importImpressionsButton').is_visible())
   page.locator('#exportImpressions').click()
   check('impression export status','Экспортировано записей: 1' in page.locator('#impressionsExportStatus').inner_text(),page.locator('#impressionsExportStatus').inner_text())
   page.locator('.tab[data-view=days]').click()
